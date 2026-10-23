@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;700&amp;family=Rubik:wght@700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-variant":"#e9ddff","inverse-surface":"#352a52","surface-container":"#f3eaff","tertiary":"#006128","outline":"#797588","on-tertiary":"#ffffff","primary-fixed-dim":"#c9beff","on-primary-fixed":"#1b0063","primary-fixed":"#e6deff","on-error-container":"#93000a","surface-container-lowest":"#ffffff","on-secondary-fixed":"#261a00","secondary-container":"#ffc329","on-tertiary-fixed":"#002109","surface":"#fdf7ff","error-container":"#ffdad6","on-secondary-fixed-variant":"#5c4300","tertiary-fixed":"#7ffc97","secondary-fixed":"#ffdf9f","surface-dim":"#e1d3ff","on-tertiary-container":"#b9ffbe","tertiary-container":"#007d35","on-background":"#1f143c","on-primary-fixed-variant":"#4500d8","on-tertiary-fixed-variant":"#005320","inverse-on-surface":"#f6eeff","on-secondary-container":"#6f5100","error":"#ba1a1a","surface-tint":"#5e35f1","secondary":"#795900","tertiary-fixed-dim":"#62df7d","surface-container-high":"#eee4ff","primary":"#5323e6","on-surface-variant":"#484556","surface-container-low":"#f8f1ff","surface-bright":"#fdf7ff","outline-variant":"#c9c3d9","on-primary":"#ffffff","on-surface":"#1f143c","secondary-fixed-dim":"#f9bd22","on-error":"#ffffff","on-primary-container":"#f1ebff","primary-container":"#6c47ff","on-secondary":"#ffffff","inverse-primary":"#c9beff","background":"#fdf7ff","surface-container-highest":"#e9ddff"},borderRadius:{DEFAULT:"1rem",lg:"2rem",xl:"3rem",full:"9999px"},spacing:{"margin":"1rem","margin-tablet":"2rem","space-sm":"0.75rem","space-xs":"0.375rem","space-lg":"1.75rem","gutter":"1rem","space-md":"1.25rem","gutter-tablet":"1.5rem","space-xl":"2.5rem"},fontFamily:{"headline-lg":["Rubik"],"body-lg":["Nunito Sans"],"display-hero":["Rubik"],"caption":["Nunito Sans"],"label-chunky":["Rubik"],"display-hero-mobile":["Rubik"],"label-badge":["Rubik"],"body-md":["Nunito Sans"],"headline-md":["Rubik"]},fontSize:{"headline-lg":["28px",{lineHeight:"36px",fontWeight:"700"}],"body-lg":["18px",{lineHeight:"26px",fontWeight:"700"}],"display-hero":["40px",{lineHeight:"48px",fontWeight:"800"}],"caption":["13px",{lineHeight:"18px",fontWeight:"700"}],"label-chunky":["18px",{lineHeight:"22px",fontWeight:"800"}],"display-hero-mobile":["32px",{lineHeight:"40px",fontWeight:"800"}],"label-badge":["14px",{lineHeight:"18px",fontWeight:"700"}],"body-md":["16px",{lineHeight:"24px",fontWeight:"600"}],"headline-md":["22px",{lineHeight:"30px",fontWeight:"700"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(31,20,60,0.06)]"><div class="h-20 w-full px-space-md lg:px-space-xl flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm flex-shrink-0"><div class="w-12 h-12 rounded-lg bg-primary flex items-center justify-center shadow-[0_4px_0_#4500d8]"><span class="material-symbols-outlined text-on-primary text-[24px]">sports_esports</span></div><div class="flex flex-col"><span class="font-headline-md text-headline-md text-primary tracking-tight leading-none">माझे गाव</span><span class="font-caption text-caption text-secondary font-bold tracking-wider uppercase mt-space-xs">Kids UI Kit v2.4</span></div></div><nav class="hidden xl:flex items-center gap-space-xs bg-surface-container-low p-space-xs rounded-full" data-active-classes="bg-primary-container text-on-primary font-label-chunky rounded-full shadow-[0_3px_0_#4500d8]"><a aria-current="page" class="px-space-md py-space-xs transition-all bg-primary-container text-on-primary font-label-chunky rounded-full shadow-[0_3px_0_#4500d8]" data-path="all-assets" href="#">All Assets</a><a class="px-space-md py-space-xs rounded-full font-label-badge text-label-badge text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="3d-characters-&amp;-mascots" href="#">3D Characters &amp; Mascots</a><a class="px-space-md py-space-xs rounded-full font-label-badge text-label-badge text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="reward-&amp;-celebration" href="#">Reward &amp; Celebration</a><a class="px-space-md py-space-xs rounded-full font-label-badge text-label-badge text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="tactile-candy-buttons" href="#">Tactile Candy Buttons</a><a class="px-space-md py-space-xs rounded-full font-label-badge text-label-badge text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="daily-streak-badges" href="#">Daily Streak Badges</a><a class="px-space-md py-space-xs rounded-full font-label-badge text-label-badge text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="css-&amp;-token-kit" href="#">CSS &amp; Token Kit</a></nav><div class="flex items-center gap-space-sm flex-shrink-0"><div class="hidden md:flex items-center gap-space-xs bg-surface-container px-space-md py-space-xs rounded-full shadow-[inset_0_2px_4px_rgba(31,20,60,0.04)]"><span class="material-symbols-outlined text-outline text-[18px]">search</span><input class="bg-transparent border-none outline-none font-body-md text-caption text-on-surface placeholder:text-outline w-44 lg:w-56" placeholder="Search toys, props, coins..." type="text"/><div class="px-space-xs py-0.5 rounded-full bg-surface-variant text-on-surface-variant font-caption text-[11px]">⌘K</div></div><div class="flex items-center gap-space-xs bg-secondary-fixed px-space-sm py-space-xs rounded-full shadow-[0_3px_0_#f9bd22]"><span class="material-symbols-outlined text-secondary text-[20px]">stars</span><span class="font-label-badge text-label-badge text-on-secondary-fixed">1,280 XP</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background min-h-[calc(100vh-140px)]"><div class="flex flex-col w-full">
+<!-- Top Hero & Meta HUD -->
+<div class="w-full px-space-md lg:px-space-xl py-space-lg bg-surface-container-low">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-md">
+<!-- Breadcrumb & Tag -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-badge text-label-badge shadow-[0_2px_0_#c9beff]">
+<span class="material-symbols-outlined text-[16px]">folder_special</span>
+          उत्कृष्ट संग्रह (Curated Collection)
+        </span>
+<span class="text-outline-variant">•</span>
+<span class="font-caption text-caption text-secondary font-bold">Kids UI v2.4 Release</span>
+<span class="text-outline-variant">•</span>
+<span class="font-caption text-caption text-outline">Production SVG/PNG Assets</span>
+</div>
+<!-- Main Heading & Brief -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md">
+<div class="max-w-3xl">
+<h1 class="font-headline-lg text-headline-lg md:text-display-hero text-on-surface tracking-tight">
+            माझे गाव • निवडक अ‍ॅसेट लायब्ररी
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-space-xs">
+            Curated 6 master 3D toys, characters, celebration assets, and tactile buttons extracted from the live quiz, celebration modal, and HUD streak screens.
+          </p>
+</div>
+<!-- Quick Spec Export Pill CTA -->
+<div class="flex-shrink-0 flex items-center gap-space-sm">
+<button class="flex items-center gap-space-xs px-space-md py-3 rounded-full bg-primary-container text-on-primary font-label-chunky text-label-badge shadow-[0_4px_0_#4500d8] active:translate-y-1 active:shadow-none transition-all" id="exportTokensBtn">
+<span class="material-symbols-outlined text-[20px]">data_object</span>
+<span>सर्व अ‍ॅसेट्स कोड (Export Specs)</span>
+</button>
+</div>
+</div>
+<!-- Metric Stat Counter Strip -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-sm pt-space-xs">
+<div class="bg-surface-container-lowest p-space-sm rounded-lg flex items-center gap-space-sm shadow-[0_3px_0_#e1d3ff]">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-primary flex-shrink-0 shadow-[0_2px_0_#c9beff]">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-primary leading-none">६</div>
+<div class="font-caption text-caption text-on-surface-variant mt-0.5">मुख्य अ‍ॅसेट्स (Master)</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg flex items-center gap-space-sm shadow-[0_3px_0_#e1d3ff]">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary flex-shrink-0 shadow-[0_2px_0_#f9bd22]">
+<span class="material-symbols-outlined text-[24px]">auto_fix_high</span>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-secondary leading-none">3D</div>
+<div class="font-caption text-caption text-on-surface-variant mt-0.5">टॉय डिझाईन (Pixar Style)</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg flex items-center gap-space-sm shadow-[0_3px_0_#e1d3ff]">
+<div class="w-12 h-12 rounded-full bg-tertiary-fixed flex items-center justify-center text-tertiary flex-shrink-0 shadow-[0_2px_0_#62df7d]">
+<span class="material-symbols-outlined text-[24px]">touch_app</span>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-tertiary leading-none">२</div>
+<div class="font-caption text-caption text-on-surface-variant mt-0.5">कँडी बटणे (Tactile)</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg flex items-center gap-space-sm shadow-[0_3px_0_#e1d3ff]">
+<div class="w-12 h-12 rounded-full bg-surface-variant flex items-center justify-center text-on-surface-variant flex-shrink-0 shadow-[0_2px_0_#c9c3d9]">
+<span class="material-symbols-outlined text-[24px]">local_fire_department</span>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-on-surface leading-none">२</div>
+<div class="font-caption text-caption text-on-surface-variant mt-0.5">स्ट्रीक बॅजेस (Badges)</div>
+</div>
+</div>
+</div>
+<!-- Live Category Filters -->
+<div class="flex items-center justify-between flex-wrap gap-space-sm pt-2">
+<div class="flex flex-wrap items-center gap-space-xs" id="filterBar">
+<button class="filter-btn active px-space-md py-1.5 rounded-full bg-primary text-on-primary font-label-badge text-label-badge shadow-[0_3px_0_#4500d8] transition-transform active:translate-y-0.5" data-filter="all">
+            सर्व (All 6)
+          </button>
+<button class="filter-btn px-space-md py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-badge text-label-badge hover:bg-surface-container-highest transition-all" data-filter="character">
+            पात्रे (Characters)
+          </button>
+<button class="filter-btn px-space-md py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-badge text-label-badge hover:bg-surface-container-highest transition-all" data-filter="reward">
+            बक्षीस (Rewards)
+          </button>
+<button class="filter-btn px-space-md py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-badge text-label-badge hover:bg-surface-container-highest transition-all" data-filter="button">
+            बटणे (Buttons)
+          </button>
+<button class="filter-btn px-space-md py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-badge text-label-badge hover:bg-surface-container-highest transition-all" data-filter="streak">
+            बॅजेस (Streak Badges)
+          </button>
+</div>
+<div class="text-caption font-caption text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">touch_app</span>
+          Tap candy buttons to test tactile squash physics
+        </div>
+</div>
+</div>
+</div>
+<!-- Showcase Gallery Grid -->
+<div class="w-full px-space-md lg:px-space-xl py-space-xl">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg" id="assetGrid">
+<!-- Asset 1: NOVA Robot Character -->
+<div class="asset-card flex flex-col bg-surface-container-lowest rounded-xl shadow-[0_8px_20px_rgba(31,20,60,0.06)] overflow-hidden transition-all duration-300 hover:-translate-y-1" data-category="character">
+<!-- Visual Canvas -->
+<div class="relative w-full h-80 bg-gradient-to-b from-primary-fixed to-surface-container flex items-center justify-center p-space-md overflow-hidden">
+<!-- Checkerboard Pattern Hint -->
+<div class="absolute inset-0 opacity-15 bg-[radial-gradient(#5323e6_1px,transparent_1px)] [background-size:16px_16px]"></div>
+<!-- Mascot Image with Floaty Glow -->
+<div class="relative z-10 w-64 h-64 flex items-center justify-center transition-transform duration-300 hover:scale-105">
+<img alt="NOVA the 3D blue robot mascot" class="max-h-full max-w-full object-contain drop-shadow-[0_16px_24px_rgba(83,35,230,0.28)]" src="https://lh3.googleusercontent.com/aida/AEtjO1WWI3gz07F2RbIgTBSfGHQT3cawOMXj6MJKbigUrARyeLxD373trJFk8v_zhzcDck593YxkjSxMF-xJ4-ieiCryc1TCoqXNRa3o2gr5nssuIU0eJLzoovnt_ZQlqHh4rB1I2y2ybGvJfhP3WUTqmUDiWF9BJwwtzqzvXmwg7nzjQsmZzjg1w03oiHkJNUjRPLORxOQ--61Ho3jl4h5pjcRKNIK5GJE2NxzcEupXTbO1gq3LGeoPfL-19A"/>
+</div>
+<!-- Type Pill Top Left -->
+<div class="absolute top-space-sm left-space-sm z-20 flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-lowest text-primary font-label-badge text-[12px] shadow-[0_2px_0_#c9beff]">
+<span class="material-symbols-outlined text-[14px]">smart_toy</span>
+            3D Character Mascot
+          </div>
+<!-- Status Indicator Top Right -->
+<div class="absolute top-space-sm right-space-sm z-20 flex items-center gap-1.5 px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-badge text-[12px] shadow-[0_2px_0_#62df7d]">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+            Production Ready
+          </div>
+</div>
+<!-- Content & Specs -->
+<div class="p-space-lg flex-1 flex flex-col justify-between gap-space-md bg-surface-container-lowest">
+<div>
+<div class="flex items-start justify-between gap-space-xs">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">NOVA • चिंटूचा रोबोट मित्र</h3>
+<p class="font-caption text-caption text-secondary font-bold">Electric Blue Futuristic Companion Guide</p>
+</div>
+<button class="w-10 h-10 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shadow-[0_3px_0_#f9bd22] active:translate-y-0.5 active:shadow-none flex-shrink-0" onclick="playVoice('नमस्कार मित्रांनो! मी NOVA आहे!')" title="Voice preview">
+<span class="material-symbols-outlined text-[20px]">volume_up</span>
+</button>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-sm leading-relaxed">
+              Companion guide for interactive story pause quizzes. Designed with welcoming amber glowing eyes and gestural hands to encourage vernacular learning.
+            </p>
+<!-- Technical Tags -->
+<div class="flex flex-wrap gap-1.5 mt-space-md">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-caption text-[12px]">Source: Story Pause Quiz</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-caption text-[12px]">Format: PNG (Alpha)</span>
+<span class="px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-caption text-[12px] font-bold">ID: IMAGE_4</span>
+</div>
+</div>
+<!-- Card Actions -->
+<div class="pt-space-sm flex items-center gap-space-xs">
+<button class="flex-1 py-2.5 px-space-sm rounded-full bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-badge text-label-badge flex items-center justify-center gap-1.5 shadow-[0_2px_0_#c9c3d9] active:translate-y-0.5 active:shadow-none transition-all" onclick="copyToken('https://lh3.googleusercontent.com/aida/AEtjO1WWI3gz07F2RbIgTBSfGHQT3cawOMXj6MJKbigUrARyeLxD373trJFk8v_zhzcDck593YxkjSxMF-xJ4-ieiCryc1TCoqXNRa3o2gr5nssuIU0eJLzoovnt_ZQlqHh4rB1I2y2ybGvJfhP3WUTqmUDiWF9BJwwtzqzvXmwg7nzjQsmZzjg1w03oiHkJNUjRPLORxOQ--61Ho3jl4h5pjcRKNIK5GJE2NxzcEupXTbO1gq3LGeoPfL-19A', this)">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span>Copy Asset ID</span>
+</button>
+<button class="py-2.5 px-space-md rounded-full bg-primary text-on-primary font-label-badge text-label-badge flex items-center gap-1 shadow-[0_3px_0_#4500d8] active:translate-y-0.5 active:shadow-none" onclick="triggerNovaCelebration()">
+<span class="material-symbols-outlined text-[18px]">waving_hand</span>
+<span>हॅलो NOVA!</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Asset 2: Bursting Treasure Chest -->
+<div class="asset-card flex flex-col bg-surface-container-lowest rounded-xl shadow-[0_8px_20px_rgba(31,20,60,0.06)] overflow-hidden transition-all duration-300 hover:-translate-y-1" data-category="reward">
+<!-- Visual Canvas -->
+<div class="relative w-full h-80 bg-gradient-to-b from-secondary-fixed to-surface-container flex items-center justify-center p-space-md overflow-hidden">
+<div class="absolute inset-0 opacity-20 bg-[radial-gradient(#795900_1px,transparent_1px)] [background-size:16px_16px]"></div>
+<!-- Chest Image -->
+<div class="relative z-10 w-64 h-64 flex items-center justify-center transition-transform duration-300 hover:scale-105">
+<img alt="Bursting golden treasure chest with confetti and ribbon" class="max-h-full max-w-full object-contain drop-shadow-[0_16px_24px_rgba(121,89,0,0.25)]" src="https://lh3.googleusercontent.com/aida/AEtjO1W0xH083mz62rJIuhCFNS62_7JusnJjA1mK0h9WS7zkm-nGjjnvanIDgwbIac0JMrDnqx6P-v1_lX6uvklsA8Gpj-8HbAPtWsFsBMFGvWOxOzFKmErcJ3behR1dCVH44K-yFE_0sp_M8ZHxPwhwx7OgKQ1d_2ekm8qUKd8vGWYHNMOIlnh-4V4-odm95XVAwpuxYiqI2A8S4SVDFhRnoGe2q7Sao0TydrUdZKIcsWn2BXtLz-Rhwy-0DVA"/>
+</div>
+<!-- Type Pill -->
+<div class="absolute top-space-sm left-space-sm z-20 flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-lowest text-secondary font-label-badge text-[12px] shadow-[0_2px_0_#ffdf9f]">
+<span class="material-symbols-outlined text-[14px]">military_tech</span>
+            Celebration Climax FX
+          </div>
+<div class="absolute top-space-sm right-space-sm z-20 flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-badge text-[12px] shadow-[0_2px_0_#f9bd22]">
+<span class="material-symbols-outlined text-[14px]">stars</span>
+            High Reward XP
+          </div>
+</div>
+<!-- Content & Specs -->
+<div class="p-space-lg flex-1 flex flex-col justify-between gap-space-md bg-surface-container-lowest">
+<div>
+<div class="flex items-start justify-between gap-space-xs">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">मॅजिकल खजिना पेटी</h3>
+<p class="font-caption text-caption text-secondary font-bold">3D Bursting Gold Chest with Rosette &amp; Confetti</p>
+</div>
+<button class="w-10 h-10 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shadow-[0_3px_0_#f9bd22] active:translate-y-0.5 active:shadow-none flex-shrink-0" onclick="playVoice('खूप छान! खजिना उघडला आहे!')" title="Voice preview">
+<span class="material-symbols-outlined text-[20px]">volume_up</span>
+</button>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-sm leading-relaxed">
+              Climactic celebration payoff asset triggered upon lesson mastery. Features explosive gold stars, colorful serpentines, and the blue champion rosette.
+            </p>
+<!-- Technical Tags -->
+<div class="flex flex-wrap gap-1.5 mt-space-md">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-caption text-[12px]">Source: Celebration Modal</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-caption text-[12px]">Style: Hand-sculpted 3D</span>
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-caption text-[12px] font-bold">ID: IMAGE_7</span>
+</div>
+</div>
+<!-- Card Actions -->
+<div class="pt-space-sm flex items-center gap-space-xs">
+<button class="flex-1 py-2.5 px-space-sm rounded-full bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-badge text-label-badge flex items-center justify-center gap-1.5 shadow-[0_2px_0_#c9c3d9] active:translate-y-0.5 active:shadow-none transition-all" onclick="copyToken('https://lh3.googleusercontent.com/aida/AEtjO1W0xH083mz62rJIuhCFNS62_7JusnJjA1mK0h9WS7zkm-nGjjnvanIDgwbIac0JMrDnqx6P-v1_lX6uvklsA8Gpj-8HbAPtWsFsBMFGvWOxOzFKmErcJ3behR1dCVH44K-yFE_0sp_M8ZHxPwhwx7OgKQ1d_2ekm8qUKd8vGWYHNMOIlnh-4V4-odm95XVAwpuxYiqI2A8S4SVDFhRnoGe2q7Sao0TydrUdZKIcsWn2BXtLz-Rhwy-0DVA', this)">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span>Copy Asset ID</span>
+</button>
+<button class="py-2.5 px-space-md rounded-full bg-secondary-container text-on-secondary-container font-label-badge text-label-badge flex items-center gap-1 shadow-[0_3px_0_#6f5100] active:translate-y-0.5 active:shadow-none" onclick="burstConfettiTest()">
+<span class="material-symbols-outlined text-[18px]">celebration</span>
+<span>तारे उधळा ✨</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Asset 3: Emerald Checkmark Candy Button -->
+<div class="asset-card flex flex-col bg-surface-container-lowest rounded-xl shadow-[0_8px_20px_rgba(31,20,60,0.06)] overflow-hidden transition-all duration-300 hover:-translate-y-1" data-category="button">
+<!-- Visual Canvas with Interactive Squash Button -->
+<div class="relative w-full h-80 bg-gradient-to-b from-tertiary-fixed to-surface-container flex flex-col items-center justify-center p-space-md overflow-hidden">
+<div class="absolute inset-0 opacity-15 bg-[radial-gradient(#006128_1px,transparent_1px)] [background-size:16px_16px]"></div>
+<!-- Interactive Candy Dome -->
+<div class="relative z-10 flex flex-col items-center">
+<button class="cursor-pointer group relative transform transition-transform duration-150 active:scale-90 focus:outline-none" id="emeraldCandyBtn" onclick="triggerCandySquash('emerald', 'शाब्बास! बरोबर उत्तर!')">
+<img alt="Emerald Green Tactile Checkmark Button" class="w-48 h-48 object-contain transition-transform group-hover:scale-105 drop-shadow-[0_14px_20px_rgba(0,125,53,0.3)]" src="https://lh3.googleusercontent.com/aida/AEtjO1Ualz769CqiI-aNaMBKs30OC9JCT4lTdyOdvkrCgHMt_JAhewv9hjibNmAWfurS8yTXEB4YaelRhqlK4dZnTywKrs8eLuJRGnegvOboymGmFWOYrE9C93HLKd0uFc-MvrnBFnIiPQr7QFCiV8Bo_l2QixRDsoi2b3rXcYlrPDBaHzsfuc3CNv5O_en1Bj0roxr7iA-eW35yg5ocvmcBc_NGfPS4R60j4FHp-pbMDhAbH3YocUfk5lOVwJQ"/>
+<!-- Specular Gloss shimmer element -->
+<span class="absolute top-5 right-12 w-6 h-6 rounded-full bg-surface-container-lowest/40 blur-xs pointer-events-none"></span>
+</button>
+<span class="mt-2 text-caption font-label-badge text-tertiary px-3 py-0.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm shadow-[0_2px_0_#b9ffbe]">
+              👆 Click to Squash &amp; Play Audio
+            </span>
+</div>
+<!-- Type Pill -->
+<div class="absolute top-space-sm left-space-sm z-20 flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-lowest text-tertiary font-label-badge text-[12px] shadow-[0_2px_0_#7ffc97]">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+            Tactile Candy Button
+          </div>
+<div class="absolute top-space-sm right-space-sm z-20 flex items-center gap-1 px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-badge text-[12px] shadow-[0_2px_0_#62df7d]">
+<span>Success / Validate</span>
+</div>
+</div>
+<!-- Content & Specs -->
+<div class="p-space-lg flex-1 flex flex-col justify-between gap-space-md bg-surface-container-lowest">
+<div>
+<div class="flex items-start justify-between gap-space-xs">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">कँडी बटण • बरोबर उत्तर</h3>
+<p class="font-caption text-caption text-tertiary font-bold">Glossy 3D Emerald Checkmark Dome</p>
+</div>
+<button class="w-10 h-10 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center shadow-[0_3px_0_#62df7d] active:translate-y-0.5 active:shadow-none flex-shrink-0" onclick="playVoice('बरोबर! छान केलेस!')" title="Voice preview">
+<span class="material-symbols-outlined text-[20px]">volume_up</span>
+</button>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-sm leading-relaxed">
+              Ultra-chunky 64px physical target with deep push-down extrusion. Specifically designed for toddler thumb dexterity and positive validation feedback.
+            </p>
+<!-- Technical Tags -->
+<div class="flex flex-wrap gap-1.5 mt-space-md">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-caption text-[12px]">Source: Candy Buttons UI</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-caption text-[12px]">State: Validated / Submit</span>
+<span class="px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-caption text-[12px] font-bold">ID: IMAGE_10</span>
+</div>
+</div>
+<!-- Card Actions -->
+<div class="pt-space-sm flex items-center gap-space-xs">
+<button class="flex-1 py-2.5 px-space-sm rounded-full bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-badge text-label-badge flex items-center justify-center gap-1.5 shadow-[0_2px_0_#c9c3d9] active:translate-y-0.5 active:shadow-none transition-all" onclick="copyToken('https://lh3.googleusercontent.com/aida/AEtjO1Ualz769CqiI-aNaMBKs30OC9JCT4lTdyOdvkrCgHMt_JAhewv9hjibNmAWfurS8yTXEB4YaelRhqlK4dZnTywKrs8eLuJRGnegvOboymGmFWOYrE9C93HLKd0uFc-MvrnBFnIiPQr7QFCiV8Bo_l2QixRDsoi2b3rXcYlrPDBaHzsfuc3CNv5O_en1Bj0roxr7iA-eW35yg5ocvmcBc_NGfPS4R60j4FHp-pbMDhAbH3YocUfk5lOVwJQ', this)">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span>Copy Asset ID</span>
+</button>
+<button class="py-2.5 px-space-md rounded-full bg-tertiary text-on-tertiary font-label-badge text-label-badge flex items-center gap-1 shadow-[0_3px_0_#002109] active:translate-y-0.5 active:shadow-none" onclick="testCandySound('success')">
+<span class="material-symbols-outlined text-[18px]">volume_up</span>
+<span>शाब्बास!</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Asset 4: Coral Cross Candy Button -->
+<div class="asset-card flex flex-col bg-surface-container-lowest rounded-xl shadow-[0_8px_20px_rgba(31,20,60,0.06)] overflow-hidden transition-all duration-300 hover:-translate-y-1" data-category="button">
+<!-- Visual Canvas with Interactive Wobble Button -->
+<div class="relative w-full h-80 bg-gradient-to-b from-error-container to-surface-container flex flex-col items-center justify-center p-space-md overflow-hidden">
+<div class="absolute inset-0 opacity-15 bg-[radial-gradient(#ba1a1a_1px,transparent_1px)] [background-size:16px_16px]"></div>
+<!-- Interactive Candy Dome -->
+<div class="relative z-10 flex flex-col items-center">
+<button class="cursor-pointer group relative transform transition-transform duration-150 active:scale-90 focus:outline-none" id="coralCandyBtn" onclick="triggerCandySquash('coral', 'अरेरे! पुन्हा प्रयत्न करा!')">
+<img alt="Soft Coral 3D Cross Button" class="w-48 h-48 object-contain transition-transform group-hover:scale-105 drop-shadow-[0_14px_20px_rgba(186,26,26,0.25)]" src="https://lh3.googleusercontent.com/aida/AEtjO1Wt51lBRgaHBBlkY0aAqGv6g5gwA5DtqDeTnfXxXIGuKQIT2898bbYaWuxIyTKX6aSKQdlhtxvpouFKkZ3bORQL400yPuTIv3KQ_wZ21Kf5HWzw9CA5PGT_jKWJEq4ZoO2NWLHK4j_bn1RViLtf112sr6nwbry6YLi9Ur2akXRPotymX2PdwmlhQVsQJD0BY0LPfJMfk8sDRYRO_m6UBcjOnPlx39HwNfLuen0xb-B9p4AkygbGZvhlX4c"/>
+<span class="absolute top-5 right-12 w-6 h-6 rounded-full bg-surface-container-lowest/40 blur-xs pointer-events-none"></span>
+</button>
+<span class="mt-2 text-caption font-label-badge text-error px-3 py-0.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm shadow-[0_2px_0_#ffdad6]">
+              👆 Click to Wobble &amp; Try Again
+            </span>
+</div>
+<!-- Type Pill -->
+<div class="absolute top-space-sm left-space-sm z-20 flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-lowest text-error font-label-badge text-[12px] shadow-[0_2px_0_#ffdad6]">
+<span class="material-symbols-outlined text-[14px]">cancel</span>
+            Tactile Candy Button
+          </div>
+<div class="absolute top-space-sm right-space-sm z-20 flex items-center gap-1 px-3 py-1 rounded-full bg-error-container text-on-error-container font-label-badge text-[12px] shadow-[0_2px_0_#ba1a1a]">
+<span>Retry / Non-punitive</span>
+</div>
+</div>
+<!-- Content & Specs -->
+<div class="p-space-lg flex-1 flex flex-col justify-between gap-space-md bg-surface-container-lowest">
+<div>
+<div class="flex items-start justify-between gap-space-xs">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">कँडी बटण • पुन्हा प्रयत्न</h3>
+<p class="font-caption text-caption text-error font-bold">Soft Coral 3D Rounded Cross Dome</p>
+</div>
+<button class="w-10 h-10 rounded-full bg-error-container text-on-error-container flex items-center justify-center shadow-[0_3px_0_#ba1a1a] active:translate-y-0.5 active:shadow-none flex-shrink-0" onclick="playVoice('चिंता करू नकोस! पुन्हा करून बघ!')" title="Voice preview">
+<span class="material-symbols-outlined text-[20px]">volume_up</span>
+</button>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-sm leading-relaxed">
+              Warm, non-punitive gentle bounce for incorrect answers. Avoids sharp aggressive red tones in favor of soft berry candy aesthetics that invite trying again.
+            </p>
+<!-- Technical Tags -->
+<div class="flex flex-wrap gap-1.5 mt-space-md">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-caption text-[12px]">Source: Candy Buttons UI</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-caption text-[12px]">Feedback: Gentle Shake</span>
+<span class="px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-caption text-[12px] font-bold">ID: IMAGE_11</span>
+</div>
+</div>
+<!-- Card Actions -->
+<div class="pt-space-sm flex items-center gap-space-xs">
+<button class="flex-1 py-2.5 px-space-sm rounded-full bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-badge text-label-badge flex items-center justify-center gap-1.5 shadow-[0_2px_0_#c9c3d9] active:translate-y-0.5 active:shadow-none transition-all" onclick="copyToken('https://lh3.googleusercontent.com/aida/AEtjO1Wt51lBRgaHBBlkY0aAqGv6g5gwA5DtqDeTnfXxXIGuKQIT2898bbYaWuxIyTKX6aSKQdlhtxvpouFKkZ3bORQL400yPuTIv3KQ_wZ21Kf5HWzw9CA5PGT_jKWJEq4ZoO2NWLHK4j_bn1RViLtf112sr6nwbry6YLi9Ur2akXRPotymX2PdwmlhQVsQJD0BY0LPfJMfk8sDRYRO_m6UBcjOnPlx39HwNfLuen0xb-B9p4AkygbGZvhlX4c', this)">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span>Copy Asset ID</span>
+</button>
+<button class="py-2.5 px-space-md rounded-full bg-error text-on-error font-label-badge text-label-badge flex items-center gap-1 shadow-[0_3px_0_#93000a] active:translate-y-0.5 active:shadow-none" onclick="testCandySound('retry')">
+<span class="material-symbols-outlined text-[18px]">replay</span>
+<span>पुन्हा पहा!</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Asset 5: Active Flame Streak Badge -->
+<div class="asset-card flex flex-col bg-surface-container-lowest rounded-xl shadow-[0_8px_20px_rgba(31,20,60,0.06)] overflow-hidden transition-all duration-300 hover:-translate-y-1" data-category="streak">
+<!-- Visual Canvas with Interactive HUD Pill Rendering -->
+<div class="relative w-full h-80 bg-gradient-to-b from-secondary-fixed-dim to-surface-container flex flex-col items-center justify-center p-space-md overflow-hidden">
+<div class="absolute inset-0 opacity-15 bg-[radial-gradient(#795900_1px,transparent_1px)] [background-size:16px_16px]"></div>
+<!-- The Live HUD Pill Component as Seen in Gameplay -->
+<div class="relative z-10 flex flex-col items-center gap-space-sm">
+<div class="group cursor-pointer flex items-center bg-gradient-to-r from-secondary-container to-secondary-fixed pl-2 pr-6 py-2 rounded-full shadow-[0_6px_0_#795900,0_10px_20px_rgba(121,89,0,0.2)] transition-all duration-200 hover:scale-105 active:translate-y-1 active:shadow-none">
+<!-- Overlapping 3D Fire Icon -->
+<div class="w-16 h-16 -ml-3 -my-2 flex-shrink-0 animate-bounce" style="animation-duration: 2.2s;">
+<img alt="Active Flame 3D Icon" class="w-full h-full object-contain drop-shadow-[0_4px_8px_rgba(121,89,0,0.3)]" src="https://lh3.googleusercontent.com/aida/AEtjO1Vk61JrrAm3ay3ssxYsy5SC3nFVeZu7CuC5ozmsSEBr5yiCkrnNViCMWDLkSI9Rr7F94Pu15_DK2vMwQUJ-otk3JuBph2RJnZjHA6CarFvXurqhqd4D-gTabN3kNwEbspN59gH2WXBHnnAEWDza3Z9cxunajV1L7sEQnycdjFEEjdBFeO0puqfcljKVI9k3h3KhBEtw8w47ESfCw7JOAG4Tp0gQc9NRNeW1a6PSrwQ2vqFT87nNkkBIk1c"/>
+</div>
+<div class="flex flex-col ml-1">
+<span class="font-headline-md text-headline-md text-on-secondary-container leading-tight">३ दिवस!</span>
+<span class="font-caption text-caption text-secondary font-bold uppercase tracking-wider">सक्रिय स्ट्रीक 🔥</span>
+</div>
+</div>
+<!-- Big Isolated Asset Preview -->
+<div class="w-20 h-20 -mt-2">
+<img alt="3D Fire Asset preview" class="w-full h-full object-contain opacity-90 drop-shadow" src="https://lh3.googleusercontent.com/aida/AEtjO1Vk61JrrAm3ay3ssxYsy5SC3nFVeZu7CuC5ozmsSEBr5yiCkrnNViCMWDLkSI9Rr7F94Pu15_DK2vMwQUJ-otk3JuBph2RJnZjHA6CarFvXurqhqd4D-gTabN3kNwEbspN59gH2WXBHnnAEWDza3Z9cxunajV1L7sEQnycdjFEEjdBFeO0puqfcljKVI9k3h3KhBEtw8w47ESfCw7JOAG4Tp0gQc9NRNeW1a6PSrwQ2vqFT87nNkkBIk1c"/>
+</div>
+</div>
+<!-- Type Pill -->
+<div class="absolute top-space-sm left-space-sm z-20 flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-lowest text-secondary font-label-badge text-[12px] shadow-[0_2px_0_#ffdf9f]">
+<span class="material-symbols-outlined text-[14px]">local_fire_department</span>
+            Daily Streak HUD Badge
+          </div>
+<div class="absolute top-space-sm right-space-sm z-20 flex items-center gap-1 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-badge text-[12px] shadow-[0_2px_0_#f9bd22]">
+<span>Active: Day 3</span>
+</div>
+</div>
+<!-- Content & Specs -->
+<div class="p-space-lg flex-1 flex flex-col justify-between gap-space-md bg-surface-container-lowest">
+<div>
+<div class="flex items-start justify-between gap-space-xs">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">सक्रिय स्ट्रीक बॅज (३ दिवस!)</h3>
+<p class="font-caption text-caption text-secondary font-bold">Golden Amber Pill with 3D Bonfire Flame</p>
+</div>
+<button class="w-10 h-10 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shadow-[0_3px_0_#f9bd22] active:translate-y-0.5 active:shadow-none flex-shrink-0" onclick="playVoice('अरे वा! सलग ३ दिवसांची स्ट्रीक चालू आहे!')" title="Voice preview">
+<span class="material-symbols-outlined text-[20px]">volume_up</span>
+</button>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-sm leading-relaxed">
+              Overlapping 3D flame badge celebrating unbroken daily learning habits. The pill container utilizes our 6px physical extrusion shadow in raw gold resin.
+            </p>
+<!-- Technical Tags -->
+<div class="flex flex-wrap gap-1.5 mt-space-md">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-caption text-[12px]">Source: Daily Streak Badges</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-caption text-[12px]">Status: Active Fire</span>
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-caption text-[12px] font-bold">ID: IMAGE_14</span>
+</div>
+</div>
+<!-- Card Actions -->
+<div class="pt-space-sm flex items-center gap-space-xs">
+<button class="flex-1 py-2.5 px-space-sm rounded-full bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-badge text-label-badge flex items-center justify-center gap-1.5 shadow-[0_2px_0_#c9c3d9] active:translate-y-0.5 active:shadow-none transition-all" onclick="copyToken('https://lh3.googleusercontent.com/aida/AEtjO1Vk61JrrAm3ay3ssxYsy5SC3nFVeZu7CuC5ozmsSEBr5yiCkrnNViCMWDLkSI9Rr7F94Pu15_DK2vMwQUJ-otk3JuBph2RJnZjHA6CarFvXurqhqd4D-gTabN3kNwEbspN59gH2WXBHnnAEWDza3Z9cxunajV1L7sEQnycdjFEEjdBFeO0puqfcljKVI9k3h3KhBEtw8w47ESfCw7JOAG4Tp0gQc9NRNeW1a6PSrwQ2vqFT87nNkkBIk1c', this)">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span>Copy Asset ID</span>
+</button>
+<button class="py-2.5 px-space-md rounded-full bg-secondary-container text-on-secondary-container font-label-badge text-label-badge flex items-center gap-1 shadow-[0_3px_0_#6f5100] active:translate-y-0.5 active:shadow-none" onclick="triggerStreakGlow('fire')">
+<span class="material-symbols-outlined text-[18px]">whatshot</span>
+<span>३ दिवस! 🔥</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Asset 6: Frozen Ice Streak Badge -->
+<div class="asset-card flex flex-col bg-surface-container-lowest rounded-xl shadow-[0_8px_20px_rgba(31,20,60,0.06)] overflow-hidden transition-all duration-300 hover:-translate-y-1" data-category="streak">
+<!-- Visual Canvas with Interactive Frosted Glass Pill -->
+<div class="relative w-full h-80 bg-gradient-to-b from-primary-fixed to-surface-container flex flex-col items-center justify-center p-space-md overflow-hidden">
+<div class="absolute inset-0 opacity-15 bg-[radial-gradient(#5323e6_1px,transparent_1px)] [background-size:16px_16px]"></div>
+<!-- The Live Frozen Pill Component -->
+<div class="relative z-10 flex flex-col items-center gap-space-sm">
+<div class="group cursor-pointer flex items-center bg-surface-container-lowest/90 backdrop-blur-md pl-2 pr-6 py-2 rounded-full shadow-[0_6px_0_#c9beff,0_10px_20px_rgba(83,35,230,0.12)] transition-all duration-200 hover:scale-105 active:translate-y-1 active:shadow-none">
+<!-- Overlapping 3D Crystalline Ice Flame -->
+<div class="w-16 h-16 -ml-3 -my-2 flex-shrink-0 animate-pulse" style="animation-duration: 3s;">
+<img alt="Frozen Ice Flame 3D Icon" class="w-full h-full object-contain drop-shadow-[0_4px_8px_rgba(83,35,230,0.2)]" src="https://lh3.googleusercontent.com/aida/AEtjO1Uj-cFPr282wgCZG4czrt8s-79E8n26oig-zFJqdsoO_RaZyggmV5mrMSOi7SEHyNfbuv8RseJd-iRX5rch40rJwYQf3J_xlylWmzw8JPgq6Zkb3a7SQlm4tChcrYXZTLjfr0_bdYMP7geUPTDhjo4tkGG9SofD_oU35lgbpKtU9q6KRsY4njcmilOGJLxBT_hwhbdKmRYfQD9yFuVofQuZxjq23itPwfsk3Vt1OczYricTbKjwgN7U-w"/>
+</div>
+<div class="flex flex-col ml-1">
+<span class="font-headline-md text-headline-md text-primary leading-tight">सुरक्षित!</span>
+<span class="font-caption text-caption text-on-surface-variant font-bold uppercase tracking-wider">स्ट्रीक सेव्हर ❄️</span>
+</div>
+</div>
+<!-- Big Isolated Asset Preview -->
+<div class="w-20 h-20 -mt-2">
+<img alt="3D Ice Flame Asset preview" class="w-full h-full object-contain opacity-90 drop-shadow" src="https://lh3.googleusercontent.com/aida/AEtjO1Uj-cFPr282wgCZG4czrt8s-79E8n26oig-zFJqdsoO_RaZyggmV5mrMSOi7SEHyNfbuv8RseJd-iRX5rch40rJwYQf3J_xlylWmzw8JPgq6Zkb3a7SQlm4tChcrYXZTLjfr0_bdYMP7geUPTDhjo4tkGG9SofD_oU35lgbpKtU9q6KRsY4njcmilOGJLxBT_hwhbdKmRYfQD9yFuVofQuZxjq23itPwfsk3Vt1OczYricTbKjwgN7U-w"/>
+</div>
+</div>
+<!-- Type Pill -->
+<div class="absolute top-space-sm left-space-sm z-20 flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-lowest text-primary font-label-badge text-[12px] shadow-[0_2px_0_#c9beff]">
+<span class="material-symbols-outlined text-[14px]">ac_unit</span>
+            Streak Freeze HUD Badge
+          </div>
+<div class="absolute top-space-sm right-space-sm z-20 flex items-center gap-1 px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-badge text-[12px] shadow-[0_2px_0_#c9beff]">
+<span>Shield Protected</span>
+</div>
+</div>
+<!-- Content & Specs -->
+<div class="p-space-lg flex-1 flex flex-col justify-between gap-space-md bg-surface-container-lowest">
+<div>
+<div class="flex items-start justify-between gap-space-xs">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">सुरक्षित स्ट्रीक बॅज (सुरक्षित!)</h3>
+<p class="font-caption text-caption text-primary font-bold">Crystalline Blue Ice Pill with Frost Flame</p>
+</div>
+<button class="w-10 h-10 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center shadow-[0_3px_0_#c9beff] active:translate-y-0.5 active:shadow-none flex-shrink-0" onclick="playVoice('काळजी नको! स्ट्रीक फ्रीझमुळे तुझी प्रगती सुरक्षित आहे!')" title="Voice preview">
+<span class="material-symbols-outlined text-[20px]">volume_up</span>
+</button>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-sm leading-relaxed">
+              Gentle protective cushion applied when students miss a lesson. The soft ice fire asset reassures young learners that their hard-earned progress remains safe.
+            </p>
+<!-- Technical Tags -->
+<div class="flex flex-wrap gap-1.5 mt-space-md">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-caption text-[12px]">Source: Daily Streak Badges</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-caption text-[12px]">FX: Frosted Shield</span>
+<span class="px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-caption text-[12px] font-bold">ID: IMAGE_15</span>
+</div>
+</div>
+<!-- Card Actions -->
+<div class="pt-space-sm flex items-center gap-space-xs">
+<button class="flex-1 py-2.5 px-space-sm rounded-full bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-badge text-label-badge flex items-center justify-center gap-1.5 shadow-[0_2px_0_#c9c3d9] active:translate-y-0.5 active:shadow-none transition-all" onclick="copyToken('https://lh3.googleusercontent.com/aida/AEtjO1Uj-cFPr282wgCZG4czrt8s-79E8n26oig-zFJqdsoO_RaZyggmV5mrMSOi7SEHyNfbuv8RseJd-iRX5rch40rJwYQf3J_xlylWmzw8JPgq6Zkb3a7SQlm4tChcrYXZTLjfr0_bdYMP7geUPTDhjo4tkGG9SofD_oU35lgbpKtU9q6KRsY4njcmilOGJLxBT_hwhbdKmRYfQD9yFuVofQuZxjq23itPwfsk3Vt1OczYricTbKjwgN7U-w', this)">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span>Copy Asset ID</span>
+</button>
+<button class="py-2.5 px-space-md rounded-full bg-primary-container text-on-primary font-label-badge text-label-badge flex items-center gap-1 shadow-[0_3px_0_#4500d8] active:translate-y-0.5 active:shadow-none" onclick="triggerStreakGlow('ice')">
+<span class="material-symbols-outlined text-[18px]">shield</span>
+<span>सुरक्षित! ❄️</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Developer Handover & Integration Sandbox Strip -->
+<div class="w-full px-space-md lg:px-space-xl py-space-xl bg-surface-container">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-lg">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div>
+<span class="font-caption text-caption text-secondary font-bold uppercase tracking-wider">Production Spec Handover</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">झटपट कोड आणि टोकेन वापर (Developer Snippets)</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Ready-to-use HTML &amp; Tailwind snippets for child-friendly touch targets and tactile drop lips.</p>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-2.5 rounded-full bg-surface-container-lowest text-primary font-label-badge text-label-badge shadow-[0_3px_0_#e1d3ff] hover:bg-surface-variant active:translate-y-0.5 active:shadow-none flex items-center gap-1.5 transition-all" onclick="copyFullConfig()">
+<span class="material-symbols-outlined text-[18px]">copy_all</span>
+<span>सर्व कॉन्फिग कॉपी करा (Copy Tokens)</span>
+</button>
+</div>
+</div>
+<!-- Code Matrix Bento -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-md">
+<!-- Snippet 1: Tactile Button CSS Matrix -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-[0_4px_12px_rgba(31,20,60,0.04)] flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-chunky text-label-badge text-tertiary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">smart_button</span>
+                3D Candy Button Spec (4px Drop Extrusion)
+              </span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-caption text-[11px] font-bold">Standard Spec</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant mt-1">Ensures 56px minimum hit-target and tactile squish for developing motor skills.</p>
+<pre class="bg-inverse-surface text-inverse-on-surface p-space-md rounded-lg font-mono text-[13px] leading-relaxed overflow-x-auto mt-space-sm select-all"><code>&lt;!-- Emerald Candy Submit CTA --&gt;
+&lt;button class="relative min-h-[56px] px-6 rounded-full bg-tertiary-container 
+        text-on-tertiary font-label-chunky shadow-[0_4px_0_#005320] 
+        active:translate-y-1 active:shadow-none transition-all flex items-center gap-2"&gt;
+  &lt;img src="https://lh3.googleusercontent.com/aida/AEtjO1Ualz769CqiI-aNaMBKs30OC9JCT4lTdyOdvkrCgHMt_JAhewv9hjibNmAWfurS8yTXEB4YaelRhqlK4dZnTywKrs8eLuJRGnegvOboymGmFWOYrE9C93HLKd0uFc-MvrnBFnIiPQr7QFCiV8Bo_l2QixRDsoi2b3rXcYlrPDBaHzsfuc3CNv5O_en1Bj0roxr7iA-eW35yg5ocvmcBc_NGfPS4R60j4FHp-pbMDhAbH3YocUfk5lOVwJQ" class="w-8 h-8 object-contain" /&gt;
+  &lt;span&gt;बरोबर उत्तर!&lt;/span&gt;
+&lt;/button&gt;</code></pre>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<span class="font-caption text-caption text-outline">Press depth: 4px translateY</span>
+<button class="font-label-badge text-label-badge text-primary hover:underline flex items-center gap-1" onclick="copySnippet(1, this)">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span>स्निपेट कॉपी करा</span>
+</button>
+</div>
+</div>
+<!-- Snippet 2: Streak HUD Badge Spec -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-[0_4px_12px_rgba(31,20,60,0.04)] flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-chunky text-label-badge text-secondary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+                Daily Streak HUD Pill Spec (Overlapping Icon)
+              </span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-caption text-[11px] font-bold">HUD Spec</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant mt-1">Floats seamlessly across map screens with 3D flame overlapping the left boundary.</p>
+<pre class="bg-inverse-surface text-inverse-on-surface p-space-md rounded-lg font-mono text-[13px] leading-relaxed overflow-x-auto mt-space-sm select-all"><code>&lt;!-- Active Fire Streak Pill --&gt;
+&lt;div class="inline-flex items-center bg-secondary-fixed pl-1.5 pr-4 py-1 
+            rounded-full shadow-[0_3px_0_#f9bd22]"&gt;
+  &lt;img src="https://lh3.googleusercontent.com/aida/AEtjO1Vk61JrrAm3ay3ssxYsy5SC3nFVeZu7CuC5ozmsSEBr5yiCkrnNViCMWDLkSI9Rr7F94Pu15_DK2vMwQUJ-otk3JuBph2RJnZjHA6CarFvXurqhqd4D-gTabN3kNwEbspN59gH2WXBHnnAEWDza3Z9cxunajV1L7sEQnycdjFEEjdBFeO0puqfcljKVI9k3h3KhBEtw8w47ESfCw7JOAG4Tp0gQc9NRNeW1a6PSrwQ2vqFT87nNkkBIk1c" class="w-9 h-9 -ml-2 -my-1" /&gt;
+  &lt;span class="font-label-chunky text-label-badge text-on-secondary-fixed ml-1"&gt;
+    ३ दिवस!
+  &lt;/span&gt;
+&lt;/div&gt;</code></pre>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<span class="font-caption text-caption text-outline">Left overlap: -8px / Scale: 1.2x</span>
+<button class="font-label-badge text-label-badge text-primary hover:underline flex items-center gap-1" onclick="copySnippet(2, this)">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span>स्निपेट कॉपी करा</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Ambient Toast Notification Container -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none" id="toastNotification">
+<div class="px-space-md py-3 rounded-full bg-inverse-surface text-inverse-on-surface font-label-badge text-label-badge shadow-[0_8px_24px_rgba(0,0,0,0.3)] flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]" id="toastIcon">check_circle</span>
+<span id="toastMsg">Asset ID Copied!</span>
+</div>
+</div>
+</div>
+<script>
+  // Simple Audio Synthesis for kid-friendly voice simulation
+  function playVoice(text) {
+    if ('speechSynthesis' in window) {
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.rate = 0.95;
+      utterance.pitch = 1.2; // Warm, friendly higher pitch for kids
+      utterance.lang = 'mr-IN'; // Marathi Indian dialect fallback
+      window.speechSynthesis.speak(utterance);
+    }
+    showToast('🔊 ऑडिओ: "' + text + '"', 'volume_up');
+  }
+
+  // Interactive Tactile Squash Button Micro-interactions
+  function triggerCandySquash(type, marathiFeedback) {
+    const btn = document.getElementById(type === 'emerald' ? 'emeraldCandyBtn' : 'coralCandyBtn');
+    if (!btn) return;
+    
+    // Physical tactile squash & stretch bounce
+    btn.classList.add('scale-75');
+    setTimeout(() => {
+      btn.classList.remove('scale-75');
+      btn.classList.add('scale-110');
+      setTimeout(() => {
+        btn.classList.remove('scale-110');
+      }, 150);
+    }, 120);
+
+    playVoice(marathiFeedback);
+  }
+
+  // NOVA friendly wave trigger
+  function triggerNovaCelebration() {
+    playVoice('छान! NOVA तुझ्यासोबत खेळायला तयार आहे!');
+    showToast('🤖 NOVA: खेळ सुरू करूया!', 'smart_toy');
+  }
+
+  // Confetti trigger simulation
+  function burstConfettiTest() {
+    playVoice('अरे वा! खजिन्यातून ५० सोन्याची नाणी मिळाली!');
+    showToast('✨ ५० नाणी आणि ३ तारे जमा झाले!', 'stars');
+  }
+
+  function testCandySound(kind) {
+    if (kind === 'success') {
+      playVoice('शाब्बास! तुझे उत्तर अगदी बरोबर आहे!');
+    } else {
+      playVoice('पुन्हा प्रयत्न करा! तू नक्की करू शकतोस!');
+    }
+  }
+
+  function triggerStreakGlow(mode) {
+    if (mode === 'fire') {
+      playVoice('३ दिवसांची अखंड स्ट्रीक! अभिनंदन!');
+    } else {
+      playVoice('स्ट्रीक फ्रीझ सक्रिय! तुझी प्रगती सुरक्षित आहे!');
+    }
+  }
+
+  // Copy helper
+  function copyToken(text, btnElement) {
+    navigator.clipboard.writeText(text).then(() => {
+      showToast('कॉपी केले: ' + text, 'done');
+      if (btnElement) {
+        const originalText = btnElement.innerHTML;
+        btnElement.innerHTML = '<span class="material-symbols-outlined text-[16px]">done</span><span>Copied!</span>';
+        setTimeout(() => {
+          btnElement.innerHTML = originalText;
+        }, 1500);
+      }
+    });
+  }
+
+  function copySnippet(id, btn) {
+    const text = id === 1 
+      ? '<button class="relative min-h-[56px] px-6 rounded-full bg-tertiary-container text-on-tertiary font-label-chunky shadow-[0_4px_0_#005320] active:translate-y-1 active:shadow-none transition-all flex items-center gap-2"><img src="https://lh3.googleusercontent.com/aida/AEtjO1Ualz769CqiI-aNaMBKs30OC9JCT4lTdyOdvkrCgHMt_JAhewv9hjibNmAWfurS8yTXEB4YaelRhqlK4dZnTywKrs8eLuJRGnegvOboymGmFWOYrE9C93HLKd0uFc-MvrnBFnIiPQr7QFCiV8Bo_l2QixRDsoi2b3rXcYlrPDBaHzsfuc3CNv5O_en1Bj0roxr7iA-eW35yg5ocvmcBc_NGfPS4R60j4FHp-pbMDhAbH3YocUfk5lOVwJQ" class="w-8 h-8 object-contain" /><span>बरोबर उत्तर!</span></button>'
+      : '<div class="inline-flex items-center bg-secondary-fixed pl-1.5 pr-4 py-1 rounded-full shadow-[0_3px_0_#f9bd22]"><img src="https://lh3.googleusercontent.com/aida/AEtjO1Vk61JrrAm3ay3ssxYsy5SC3nFVeZu7CuC5ozmsSEBr5yiCkrnNViCMWDLkSI9Rr7F94Pu15_DK2vMwQUJ-otk3JuBph2RJnZjHA6CarFvXurqhqd4D-gTabN3kNwEbspN59gH2WXBHnnAEWDza3Z9cxunajV1L7sEQnycdjFEEjdBFeO0puqfcljKVI9k3h3KhBEtw8w47ESfCw7JOAG4Tp0gQc9NRNeW1a6PSrwQ2vqFT87nNkkBIk1c" class="w-9 h-9 -ml-2 -my-1" /><span class="font-label-chunky text-label-badge text-on-secondary-fixed ml-1">३ दिवस!</span></div>';
+    
+    navigator.clipboard.writeText(text).then(() => {
+      showToast('स्निपेट क्लिपबोर्डवर कॉपी झाले!', 'code');
+    });
+  }
+
+  function copyFullConfig() {
+    const configExport = {
+      version: "2.4.0",
+      theme: "Majhe Gaon Kids UI",
+      assets: [
+        { id: "IMAGE_4", type: "3D Character", name: "NOVA Blue Robot Mascot" },
+        { id: "IMAGE_7", type: "Celebration FX", name: "Bursting Treasure Chest" },
+        { id: "IMAGE_10", type: "Tactile Button", name: "Emerald Checkmark Candy Button" },
+        { id: "IMAGE_11", type: "Tactile Button", name: "Coral Cross Candy Button" },
+        { id: "IMAGE_14", type: "HUD Streak", name: "Active Flame 3 Days Streak Badge" },
+        { id: "IMAGE_15", type: "HUD Streak Freeze", name: "Frozen Ice Streak Protected Badge" }
+      ]
+    };
+    navigator.clipboard.writeText(JSON.stringify(configExport, null, 2)).then(() => {
+      showToast('सर्व ६ अ‍ॅसेट्सची JSON रूपरेषा कॉपी झाली!', 'data_object');
+    });
+  }
+
+  // Toast System
+  function showToast(msg, icon) {
+    const toast = document.getElementById('toastNotification');
+    const toastMsg = document.getElementById('toastMsg');
+    const toastIcon = document.getElementById('toastIcon');
+    if (!toast) return;
+
+    toastMsg.textContent = msg;
+    if (icon) toastIcon.textContent = icon;
+
+    toast.classList.remove('translate-y-24', 'opacity-0');
+    toast.classList.add('translate-y-0', 'opacity-100');
+
+    setTimeout(() => {
+      toast.classList.remove('translate-y-0', 'opacity-100');
+      toast.classList.add('translate-y-24', 'opacity-0');
+    }, 2400);
+  }
+
+  // Category Filtering Logic
+  document.addEventListener('DOMContentLoaded', () => {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const assetCards = document.querySelectorAll('.asset-card');
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Reset classes
+        filterButtons.forEach(b => {
+          b.classList.remove('bg-primary', 'text-on-primary', 'shadow-[0_3px_0_#4500d8]');
+          b.classList.add('bg-surface-container-high', 'text-on-surface-variant');
+        });
+
+        // Set active
+        btn.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
+        btn.classList.add('bg-primary', 'text-on-primary', 'shadow-[0_3px_0_#4500d8]');
+
+        const filterVal = btn.getAttribute('data-filter');
+
+        assetCards.forEach(card => {
+          if (filterVal === 'all' || card.getAttribute('data-category') === filterVal) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    const exportBtn = document.getElementById('exportTokensBtn');
+    if (exportBtn) {
+      exportBtn.addEventListener('click', copyFullConfig);
+    }
+  });
+</script></main><footer class="w-full bg-surface-container-lowest shadow-[0_-2px_12px_rgba(31,20,60,0.03)]"><div class="w-full px-space-md lg:px-space-xl py-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-full bg-tertiary-fixed flex items-center justify-center shadow-[0_2px_0_#62df7d]"><span class="material-symbols-outlined text-on-tertiary-fixed text-[20px]">wb_sunny</span></div><p class="font-body-md text-caption text-on-surface-variant">Crafted for playful Indian folklore learning adventures with NOVA &amp; Chintu.</p></div><div class="flex items-center gap-space-md"><a class="font-label-badge text-label-badge text-on-surface-variant hover:text-on-surface transition-colors" data-path="css-&amp;-token-kit" href="#">Design Tokens</a><span class="text-outline-variant">•</span><a class="font-label-badge text-label-badge text-on-surface-variant hover:text-on-surface transition-colors" data-path="guidelines" href="#">Parent &amp; Teacher Guide</a><span class="text-outline-variant">•</span><span class="font-caption text-caption text-outline">© 2025 Majhe Gaon</span></div></div></footer></body></html>

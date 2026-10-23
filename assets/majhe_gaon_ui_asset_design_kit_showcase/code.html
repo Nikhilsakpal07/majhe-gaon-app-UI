@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;700;800&amp;family=Rubik:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-tertiary-fixed-variant":"#005320","primary-container":"#6c47ff","error-container":"#ffdad6","surface-variant":"#e9ddff","surface-dim":"#e1d3ff","secondary-fixed":"#ffdf9f","on-surface":"#1f143c","on-secondary-fixed":"#261a00","surface-container-high":"#eee4ff","on-error-container":"#93000a","primary":"#5323e6","surface":"#fdf7ff","on-secondary":"#ffffff","surface-tint":"#5e35f1","on-background":"#1f143c","primary-fixed-dim":"#c9beff","on-secondary-container":"#6f5100","inverse-on-surface":"#f6eeff","secondary-container":"#ffc329","tertiary":"#006128","secondary":"#795900","on-secondary-fixed-variant":"#5c4300","background":"#fdf7ff","tertiary-fixed":"#7ffc97","tertiary-container":"#007d35","on-tertiary":"#ffffff","on-primary-fixed":"#1b0063","on-primary-container":"#f1ebff","surface-container-low":"#f8f1ff","on-tertiary-fixed":"#002109","tertiary-fixed-dim":"#62df7d","error":"#ba1a1a","outline":"#797588","inverse-primary":"#c9beff","primary-fixed":"#e6deff","surface-container":"#f3eaff","surface-container-highest":"#e9ddff","surface-bright":"#fdf7ff","on-primary-fixed-variant":"#4500d8","secondary-fixed-dim":"#f9bd22","inverse-surface":"#352a52","on-primary":"#ffffff","on-tertiary-container":"#b9ffbe","outline-variant":"#c9c3d9","on-error":"#ffffff","on-surface-variant":"#484556","surface-container-lowest":"#ffffff"},"borderRadius":{"DEFAULT":"1rem","lg":"2rem","xl":"3rem","full":"9999px"},"spacing":{"gutter-tablet":"1.5rem","margin-tablet":"2rem","space-md":"1.25rem","margin":"1rem","space-lg":"1.75rem","space-sm":"0.75rem","space-xs":"0.375rem","space-xl":"2.5rem","gutter":"1rem"},"fontFamily":{"body-lg":["Nunito Sans"],"display-hero":["Rubik"],"caption":["Nunito Sans"],"headline-md":["Rubik"],"body-md":["Nunito Sans"],"display-hero-mobile":["Rubik"],"headline-lg":["Rubik"],"label-badge":["Rubik"],"label-chunky":["Rubik"]},"fontSize":{"body-lg":["18px",{"lineHeight":"26px","fontWeight":"700"}],"display-hero":["40px",{"lineHeight":"48px","fontWeight":"800"}],"caption":["13px",{"lineHeight":"18px","fontWeight":"700"}],"headline-md":["22px",{"lineHeight":"30px","fontWeight":"700"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"600"}],"display-hero-mobile":["32px",{"lineHeight":"40px","fontWeight":"800"}],"headline-lg":["28px",{"lineHeight":"36px","fontWeight":"700"}],"label-badge":["14px",{"lineHeight":"18px","fontWeight":"700"}],"label-chunky":["18px",{"lineHeight":"22px","fontWeight":"800"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col pt-space-md pb-space-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="px-space-md mb-space-md flex items-center gap-space-sm"><div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container shadow-sm"><span class="material-symbols-outlined text-[24px]">cottage</span></div><div><div class="font-label-chunky text-label-chunky text-primary tracking-wide leading-none">माझे गाव</div><div class="font-caption text-caption text-on-surface-variant leading-tight">Design System &amp; Kit</div></div></div><div class="px-space-md mb-space-sm"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[20px]">search</span><input class="w-full pl-9 pr-3 py-2 bg-surface-container-highest text-on-surface font-body-md text-caption rounded-full border-none outline-none focus:ring-2 focus:ring-primary-container transition-all placeholder:text-outline" placeholder="Filter components..." type="text"/></div></div><nav class="flex-1 px-space-sm overflow-y-auto space-y-1" data-active-classes="bg-primary-container text-on-primary-container font-label-badge"><div class="px-space-xs py-1 text-on-surface-variant font-caption text-caption uppercase tracking-wider">Core Foundations</div><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg transition-colors bg-primary-container text-on-primary-container font-label-badge" data-path="overview" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-body-md text-body-md">Overview</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="color-and-depth" href="#"><span class="material-symbols-outlined text-[20px]">palette</span><span class="font-body-md text-body-md">Color &amp; Depth</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="typography" href="#"><span class="material-symbols-outlined text-[20px]">match_case</span><span class="font-body-md text-body-md">Typography</span></a><div class="pt-space-sm px-space-xs py-1 text-on-surface-variant font-caption text-caption uppercase tracking-wider">Toybox UI Components</div><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="tactile-buttons" href="#"><span class="material-symbols-outlined text-[20px]">smart_button</span><span class="font-body-md text-body-md">Tactile Buttons</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="game-hud-chips" href="#"><span class="material-symbols-outlined text-[20px]">toll</span><span class="font-body-md text-body-md">Game HUD Chips</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="speech-bubbles" href="#"><span class="material-symbols-outlined text-[20px]">chat_bubble</span><span class="font-body-md text-body-md">Speech Bubbles</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="interactive-tiles" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-body-md text-body-md">Interactive Tiles</span></a><div class="pt-space-sm px-space-xs py-1 text-on-surface-variant font-caption text-caption uppercase tracking-wider">Mascots &amp; Characters</div><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="nova-and-chintu-assets" href="#"><span class="material-symbols-outlined text-[20px]">face</span><span class="font-body-md text-body-md">NOVA &amp; Chintu Assets</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="audio-sound-triggers" href="#"><span class="material-symbols-outlined text-[20px]">volume_up</span><span class="font-body-md text-body-md">Audio Sound Triggers</span></a></nav><div class="px-space-md pt-space-sm"><div class="p-space-sm bg-surface-container-highest rounded-lg flex items-center justify-between"><span class="font-caption text-caption text-on-surface-variant">v1.4 Village Build</span><span class="px-2 py-0.5 rounded-full bg-tertiary-container text-on-tertiary font-label-badge text-caption">Playable</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-md"><div class="font-headline-md text-headline-md text-on-surface">Majhe Gaon UI Kit &amp; Asset Library</div><span class="px-space-xs py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-badge text-caption">Kids 5–10</span></div><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1 rounded-full shadow-inner"><span class="material-symbols-outlined text-secondary-container text-[20px]">monetization_on</span><span class="font-label-badge text-label-badge text-on-surface">1,250</span></div><div class="hidden md:flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1 rounded-full shadow-inner"><span class="material-symbols-outlined text-tertiary-container text-[20px]">local_fire_department</span><span class="font-label-badge text-label-badge text-on-surface">7 Days</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="w-full px-space-lg pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full pb-space-xl">
+<!-- Top Hero & Navigation Jump Bar -->
+<section class="relative w-full rounded-lg bg-surface-container-high p-space-lg mb-space-xl overflow-hidden shadow-sm">
+<div class="absolute -right-16 -top-16 w-64 h-64 rounded-full bg-secondary-container/20 blur-3xl pointer-events-none"></div>
+<div class="absolute -left-12 -bottom-12 w-56 h-56 rounded-full bg-primary-container/15 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 max-w-4xl">
+<div class="flex items-center gap-space-sm mb-space-sm">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary text-on-primary font-label-badge text-caption shadow-sm">
+<span class="material-symbols-outlined text-[16px]">verified</span> Kid-First Gamified System
+        </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-highest text-on-surface-variant font-caption text-caption">
+          Ages 5–7 • Bilingual (मराठी + English)
+        </span>
+</div>
+<h1 class="font-display-hero text-display-hero text-on-surface tracking-tight mb-2">
+        माझे गाव <span class="text-primary-container">(Majhe Gaon)</span> UI Kit &amp; Asset Library
+      </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-space-md max-w-2xl">
+        Complete tactile design tokens, physical 3D candy buttons, gamified saga nodes, audio sound triggers, and bilingual vernacular copy bank crafted for rural &amp; suburban Indian early learners.
+      </p>
+<!-- Quick Jump Action Pills -->
+<div class="flex flex-wrap items-center gap-2 pt-2">
+<a class="px-space-sm py-2 rounded-full bg-surface-container-lowest text-on-surface hover:bg-primary hover:text-on-primary transition-all shadow-sm font-label-badge text-caption flex items-center gap-1.5" href="#art-catalog">
+<span class="material-symbols-outlined text-[16px] text-tertiary-container">image</span> Visual 3D Assets
+        </a>
+<a class="px-space-sm py-2 rounded-full bg-surface-container-lowest text-on-surface hover:bg-primary hover:text-on-primary transition-all shadow-sm font-label-badge text-caption flex items-center gap-1.5" href="#color-tokens">
+<span class="material-symbols-outlined text-[16px] text-secondary-container">palette</span> Color Tokens
+        </a>
+<a class="px-space-sm py-2 rounded-full bg-surface-container-lowest text-on-surface hover:bg-primary hover:text-on-primary transition-all shadow-sm font-label-badge text-caption flex items-center gap-1.5" href="#tactile-buttons">
+<span class="material-symbols-outlined text-[16px] text-primary">smart_button</span> 3D Push Buttons
+        </a>
+<a class="px-space-sm py-2 rounded-full bg-surface-container-lowest text-on-surface hover:bg-primary hover:text-on-primary transition-all shadow-sm font-label-badge text-caption flex items-center gap-1.5" href="#hud-and-nodes">
+<span class="material-symbols-outlined text-[16px] text-secondary-container">hub</span> Game HUD &amp; Nodes
+        </a>
+<a class="px-space-sm py-2 rounded-full bg-surface-container-lowest text-on-surface hover:bg-primary hover:text-on-primary transition-all shadow-sm font-label-badge text-caption flex items-center gap-1.5" href="#game-cards">
+<span class="material-symbols-outlined text-[16px] text-tertiary-container">forum</span> Cards &amp; Modals
+        </a>
+<a class="px-space-sm py-2 rounded-full bg-surface-container-lowest text-on-surface hover:bg-primary hover:text-on-primary transition-all shadow-sm font-label-badge text-caption flex items-center gap-1.5" href="#vernacular-bank">
+<span class="material-symbols-outlined text-[16px] text-primary-container">translate</span> Marathi Copy Bank
+        </a>
+</div>
+</div>
+</section>
+<!-- SECTION 1: Visual Art & 3D Assets Catalog -->
+<section class="w-full mb-space-xl" id="art-catalog">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-6 bg-primary rounded-full"></span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">1. Visual &amp; 3D Illustration Catalog</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Saga map background, 3D cinema assets, and preschool mascot character specs.</p>
+</div>
+<span class="px-space-sm py-1 rounded-full bg-tertiary-container/10 text-tertiary-container font-label-badge text-caption">Production Verified</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-md">
+<!-- Card 1: 3D Saga Map BG (Exact Image) -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md flex flex-col justify-between shadow-sm">
+<div>
+<div class="relative w-full aspect-[9/16] max-h-[360px] overflow-hidden rounded-md mb-space-sm bg-surface-container-high group">
+<img alt="Indian Village Saga Map Background" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1WsYjiZDzBvB0Tis2ayAXQOji7H3Smj--B_zwe_aaC5-M5sDRtK9KjHYDFjxHpQAbsb6qE4yTj1tKlcBYDnvwEnWVg8Tjwp6t9kTU7QU3MBkoYLh_agEJvURFbAGKxmfsPKGuAvZOTGLiF-5L3kKVi_1VOY9gO6OCGh6rjwC-1I8imY6PihpuIpeYGJiaHirF73Bdnafnpll8HSdPYf65ynIlFRBNi8BIiAbd4RBur6t_AIsBpQdgpA7Q"/>
+<div class="absolute top-2 left-2 px-2.5 py-1 rounded-full bg-inverse-surface/85 text-inverse-on-surface font-label-badge text-caption backdrop-blur-md">
+              768 × 1376 (9:16)
+            </div>
+<div class="absolute bottom-2 right-2 px-2 py-0.5 rounded-full bg-primary text-on-primary font-caption text-caption shadow">
+              https://lh3.googleusercontent.com/aida/AEtjO1WsYjiZDzBvB0Tis2ayAXQOji7H3Smj--B_zwe_aaC5-M5sDRtK9KjHYDFjxHpQAbsb6qE4yTj1tKlcBYDnvwEnWVg8Tjwp6t9kTU7QU3MBkoYLh_agEJvURFbAGKxmfsPKGuAvZOTGLiF-5L3kKVi_1VOY9gO6OCGh6rjwC-1I8imY6PihpuIpeYGJiaHirF73Bdnafnpll8HSdPYf65ynIlFRBNi8BIiAbd4RBur6t_AIsBpQdgpA7Q
+            </div>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-1">3D Village Saga Road Map</h3>
+<p class="font-caption text-caption text-on-surface-variant mb-space-sm">
+            Isometric Indian rural landscape with winding hills, terracotta cottages, rivers, and sunflower groves. Designed as vertical scrolling game level progression base.
+          </p>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-md mt-space-xs">
+<div class="flex items-center justify-between mb-1">
+<span class="font-caption text-caption text-primary font-bold uppercase tracking-wider">Midjourney / Imagen Prompt</span>
+<button class="text-caption font-label-badge text-primary-container hover:underline flex items-center gap-1" onclick="navigator.clipboard.writeText('Isometric 3D Indian village road saga map for mobile game, Pixar stylized rendering, winding dirt path, terracotta roof huts, sunflowers, sparkling river, sunny bright sky, 8k --ar 9:16'); alert('Prompt Copied!');">
+<span class="material-symbols-outlined text-[14px]">content_copy</span> Copy
+            </button>
+</div>
+<div class="font-caption text-caption text-on-surface-variant select-all truncate">
+            "Isometric 3D Indian village road saga map for mobile game, Pixar stylized..."
+          </div>
+</div>
+</div>
+<!-- Card 2: 3D Cinema Mode / Robot NOVA & Chintu -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md flex flex-col justify-between shadow-sm">
+<div>
+<div class="relative w-full aspect-[16/10] overflow-hidden rounded-md mb-space-sm bg-surface-container-high group">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Charming 3D Pixar render of Chintu a 6 year old spirited Indian boy in a golden yellow cotton kurta holding hands with NOVA a glossy electric blue friendly futuristic companion robot with digital heart eyes under a large banyan tree with warm golden hour cinematic glow" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAxNxG-eCPOtpOseTaxh7ceb578Szy9LUXffDm5aDfsJ9hK74kyMqoBpDh6DOePpvCaglfd4yYNaKPuijDFHjvUKrpDU9yfs59X0Qi91g_4-tkeOGxRWHvpCHQeo3dnsv6kTk9FJJh49-nxqQ8Jx-xUmIg6lYHqiLPESKrBq97ou4HyuHqwOMG-PDqo0rN4F3piFOjJrXMXru9K2LrQAoTkkfVkJphhX68ugHsEt4JdcsTT4-IOzsM2')"></div>
+<div class="absolute top-2 left-2 px-2.5 py-1 rounded-full bg-inverse-surface/85 text-inverse-on-surface font-label-badge text-caption backdrop-blur-md">
+              Cinema 16:9 Switch
+            </div>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-1">Landscape Cinema &amp; Rotation</h3>
+<p class="font-caption text-caption text-on-surface-variant mb-space-sm">
+            Screen 5 Landscape unlock screen trigger. Guides small hands to turn device horizontal for full-screen village story theater with NOVA's holographic projection.
+          </p>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-md mt-space-xs">
+<div class="flex items-center justify-between mb-1">
+<span class="font-caption text-caption text-primary font-bold uppercase tracking-wider">Device Tilt Event Trigger</span>
+<span class="font-label-badge text-caption px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed">Screen 5 Spec</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant">
+            Trigger: Gyroscope / CSS `@media (orientation: landscape)`. Plays tactile "ting-ding!" chime and rotates Chintu &amp; NOVA sprite pair.
+          </p>
+</div>
+</div>
+<!-- Card 3: Mascot Character Design System -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md flex flex-col justify-between shadow-sm">
+<div>
+<div class="grid grid-cols-2 gap-2 mb-space-sm">
+<div class="relative aspect-square rounded-md overflow-hidden bg-secondary-fixed/40 flex flex-col items-center justify-center p-2">
+<div class="w-full h-full bg-cover bg-center rounded-md" data-alt="3D animated portrait of Chintu, a cheerful 6 year old Indian village boy with dark curly hair wearing a bright saffron yellow kurta smiling warmly with wide open curious eyes against soft cream backdrop" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAPjb3xH5QC7iUXUZpvtp9U3P948GoDZXMsE6xD5hL_vOOCu3CW2BWz-vrbzHTbKQcf6CZdMoPVqKzI4pz-L0rikxn4ETy7MLOuujnm-Rw2qbQG-ImfF0Twhl5oEScy1YRqzHVbS70mp-7vTwW4xKtLbX9VNFr25KRM3HKU9SE_puCmt_nU7qoCMDBm88NwVrgA4bah593H9wsM4sYEJ6RUnPlzZlqp5UmTH2_bgFChD4NH6Z3IlLG_')"></div>
+<span class="absolute bottom-1 bg-surface-container-lowest/90 px-2 py-0.5 rounded-full font-label-badge text-caption text-on-surface">चिंटू (Chintu)</span>
+</div>
+<div class="relative aspect-square rounded-md overflow-hidden bg-primary-fixed flex flex-col items-center justify-center p-2">
+<div class="w-full h-full bg-cover bg-center rounded-md" data-alt="3D toybox render of NOVA, an electric blue rounded friendly robot with soft curved edges, turquoise digital animated eye expressions, and small golden antenna hovering against lavender backdrop" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAtw3lv4xtFIxBpgW2x8kJGqLU6hW7-Df-YrgwUpft7FAnm6qhFCZPDfJO_gcNXyOm4bttLuNySLi37KpMU97IyChZ2t6qz03sjnvVea6WkXpQbH_SbF6nHxMnLcN5WugpKd42o8SWOOe053hm7uFCZzz2-bi2LPkirqnWFBEzpORix77XFe4SeZY0VdQ4c0-jUKrh_CsQuqz-UUq32uzNOH6PbelH56O-aL9bypXBcrarIC1PLjfmz')"></div>
+<span class="absolute bottom-1 bg-surface-container-lowest/90 px-2 py-0.5 rounded-full font-label-badge text-caption text-on-surface">NOVA Bot</span>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-1">Mascot Sprite Duo</h3>
+<p class="font-caption text-caption text-on-surface-variant mb-space-sm">
+            Emotional anchors: Chintu speaks Marathi and bridges village curiosity; NOVA introduces STEM principles, audio playback prompts, and gamified progress alerts.
+          </p>
+</div>
+<div class="flex items-center gap-2 pt-2">
+<span class="px-2 py-1 rounded-full bg-surface-container-high font-label-badge text-caption text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-tertiary-container">pets</span> गाय (Gauri Cow)
+          </span>
+<span class="px-2 py-1 rounded-full bg-surface-container-high font-label-badge text-caption text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary-container">flutter</span> चिमणी (Sparrow)
+          </span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: Interactive 3D Candy Button Library -->
+<section class="w-full mb-space-xl" id="tactile-buttons">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-6 bg-tertiary-container rounded-full"></span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">2. Interactive 3D Tactile Buttons</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Tap and hold to test spring physics, 4px push depth, and extrusion lip collapse.</p>
+</div>
+<span class="px-space-sm py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-badge text-caption">56px Min Touch Targets</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-md">
+<!-- Live Sandbox Box -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-sm flex flex-col justify-between">
+<div>
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider block mb-space-md">Live Interactive Playground</span>
+<div class="flex flex-col gap-space-md items-start">
+<!-- Primary Emerald Green Candy CTA -->
+<div class="flex items-center gap-space-md flex-wrap w-full">
+<button class="group relative px-8 py-3.5 rounded-full bg-tertiary-container text-on-tertiary font-label-chunky text-label-chunky shadow-[0_6px_0_#00471e,0_10px_16px_rgba(0,0,0,0.14)] active:translate-y-[6px] active:shadow-[0_0px_0_#00471e] transition-all flex items-center gap-2 select-none cursor-pointer">
+<span class="drop-shadow-[0_1px_1px_rgba(0,0,0,0.4)]">खेळा! (PLAY!)</span>
+<span class="material-symbols-outlined text-[24px]">play_circle</span>
+</button>
+<div class="font-caption text-caption text-on-surface-variant">
+<span class="font-bold text-on-surface">Primary CTA</span> • Extruded 6px solid Forest base
+              </div>
+</div>
+<!-- Secondary Golden Amber Action Button -->
+<div class="flex items-center gap-space-md flex-wrap w-full">
+<button class="group relative px-7 py-3 rounded-full bg-secondary-container text-on-secondary-container font-label-chunky text-label-chunky shadow-[0_5px_0_#b38400,0_8px_14px_rgba(0,0,0,0.12)] active:translate-y-[5px] active:shadow-[0_0px_0_#b38400] transition-all flex items-center gap-2 select-none cursor-pointer">
+<span>तपासा! (CHECK)</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</button>
+<div class="font-caption text-caption text-on-surface-variant">
+<span class="font-bold text-on-surface">Answer Check</span> • Warm Golden Bevel
+              </div>
+</div>
+<!-- Round Quick-Access Icon Toys -->
+<div class="flex items-center gap-space-sm pt-2">
+<!-- Replay -->
+<button class="w-14 h-14 rounded-full bg-surface-container-high text-primary flex items-center justify-center shadow-[0_4px_0_#c9beff] active:translate-y-[4px] active:shadow-none transition-all cursor-pointer" title="पुन्हा खेळा (Replay)">
+<span class="material-symbols-outlined text-[28px]">replay</span>
+</button>
+<!-- Audio Speaker -->
+<button class="w-14 h-14 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shadow-[0_4px_0_#d19b00] active:translate-y-[4px] active:shadow-none transition-all cursor-pointer animate-pulse" title="ऐका (Listen)">
+<span class="material-symbols-outlined text-[28px]">volume_up</span>
+</button>
+<!-- Close/Exit -->
+<button class="w-14 h-14 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center shadow-[0_4px_0_#b7accc] active:translate-y-[4px] active:shadow-none transition-all cursor-pointer" title="बंद करा (Exit)">
+<span class="material-symbols-outlined text-[26px]">close</span>
+</button>
+<!-- Disabled / Locked State -->
+<button class="px-5 py-3 rounded-full bg-surface-dim text-outline cursor-not-allowed shadow-[0_4px_0_#c9beff] flex items-center gap-1.5 font-label-badge text-label-badge select-none" disabled="">
+<span class="material-symbols-outlined text-[18px]">lock</span> कुलूपबंद (Locked)
+              </button>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-low p-space-sm rounded-md">
+<p class="font-caption text-caption text-on-surface-variant">
+            ⚡ <strong>Tactile Guarantee:</strong> All children's interaction points drop their bottom extrusion to zero upon touch down to mimic arcade machine microswitches.
+          </p>
+</div>
+</div>
+<!-- Code & Token Reference Card -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider">Button CSS Anatomy</span>
+<button class="text-caption font-label-badge text-primary-container hover:underline flex items-center gap-1" onclick="navigator.clipboard.writeText('.btn-3d-candy { border-radius: 9999px; box-shadow: 0 6px 0 #00471e; transform: translateY(0); } .btn-3d-candy:active { transform: translateY(6px); box-shadow: 0 0 0 transparent; }'); alert('CSS Copied to clipboard!');">
+<span class="material-symbols-outlined text-[14px]">content_copy</span> Copy CSS
+            </button>
+</div>
+<pre class="bg-inverse-surface text-inverse-on-surface p-space-sm rounded-md font-mono text-[13px] leading-relaxed overflow-x-auto"><span class="text-secondary-fixed">/* Reusable 3D Chunky Push Class */</span>
+.candy-btn-green {
+  background-color: <span class="text-tertiary-fixed">#007d35</span>;
+  box-shadow: 0 6px 0 <span class="text-tertiary">#00471e</span>, 0 10px 18px rgba(0,0,0,0.14);
+  border-radius: 9999px;
+  min-height: 56px;
+  min-width: 56px;
+  transition: all 0.08s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.candy-btn-green:active {
+  transform: translateY(6px);
+  box-shadow: 0 0px 0 <span class="text-tertiary">#00471e</span>;
+}
+
+<span class="text-secondary-fixed">/* Amber Checkpoint Variation */</span>
+.candy-btn-amber {
+  background-color: <span class="text-secondary-container">#ffc329</span>;
+  box-shadow: 0 5px 0 <span class="text-secondary">#b38400</span>;
+}</pre>
+</div>
+<div class="grid grid-cols-2 gap-space-sm mt-space-md">
+<div class="p-2.5 rounded-md bg-surface-container-high">
+<span class="font-label-badge text-caption text-on-surface block mb-0.5">Physical Rest Height</span>
+<span class="font-caption text-caption text-on-surface-variant font-mono">56px + 6px Lip</span>
+</div>
+<div class="p-2.5 rounded-md bg-surface-container-high">
+<span class="font-label-badge text-caption text-on-surface block mb-0.5">Pressed Travel</span>
+<span class="font-caption text-caption text-on-surface-variant font-mono">translateY(6px)</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: Game HUD Chips & Candy Saga Map Nodes -->
+<section class="w-full mb-space-xl" id="hud-and-nodes">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-6 bg-secondary-container rounded-full"></span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">3. Game HUD Chips &amp; Saga Map Nodes</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Top-screen metric pills and level nodes for the village exploration trail.</p>
+</div>
+<span class="px-space-sm py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-badge text-caption">Saga Progression UI</span>
+</div>
+<!-- HUD Chips Row -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-sm mb-space-md">
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider block mb-space-sm">Top Bar Game HUD Chips (Children Friendly Pill Architecture)</span>
+<div class="flex flex-wrap items-center gap-space-md">
+<!-- Coin Counter HUD Chip -->
+<div class="relative flex items-center bg-surface-container-low pl-10 pr-4 py-1.5 rounded-full shadow-inner">
+<div class="absolute -left-2 w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container shadow-md">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">monetization_on</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-badge text-label-badge text-on-surface leading-none">१७०</span>
+<span class="font-caption text-[11px] text-on-surface-variant uppercase font-bold">नाणी (Coins)</span>
+</div>
+</div>
+<!-- Star Counter HUD Chip -->
+<div class="relative flex items-center bg-surface-container-low pl-10 pr-4 py-1.5 rounded-full shadow-inner">
+<div class="absolute -left-2 w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container shadow-md">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">stars</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-badge text-label-badge text-on-surface leading-none">२४</span>
+<span class="font-caption text-[11px] text-on-surface-variant uppercase font-bold">स्टार (Stars)</span>
+</div>
+</div>
+<!-- Streak Fire HUD Chip -->
+<div class="relative flex items-center bg-surface-container-low pl-10 pr-4 py-1.5 rounded-full shadow-inner">
+<div class="absolute -left-2 w-10 h-10 rounded-full bg-error text-on-error flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-badge text-label-badge text-on-surface leading-none">५ दिवस</span>
+<span class="font-caption text-[11px] text-on-surface-variant uppercase font-bold">सातत्य (Streak)</span>
+</div>
+</div>
+<!-- Audio Volume Toggle Chip -->
+<div class="flex items-center gap-1.5 bg-surface-container-low px-3 py-1.5 rounded-full shadow-inner">
+<span class="material-symbols-outlined text-tertiary-container text-[20px]">music_note</span>
+<span class="font-label-badge text-caption text-on-surface">संगीत चालू</span>
+</div>
+</div>
+</div>
+<!-- Saga Map Level Nodes Demo Box -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider block">Level Node Hierarchy</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Interactive Saga Path Simulation</h3>
+</div>
+<span class="font-caption text-caption text-on-surface-variant">Duolingo &amp; Candy Crush Inspired</span>
+</div>
+<div class="relative w-full py-8 px-4 bg-gradient-to-b from-surface-container-high/60 to-surface-container-lowest rounded-md flex flex-col md:flex-row items-center justify-around gap-6">
+<!-- Node 1: Completed Forest Green with 3 Stars -->
+<div class="flex flex-col items-center">
+<div class="flex items-center gap-0.5 mb-1.5">
+<span class="material-symbols-outlined text-secondary-container text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-secondary-container text-[20px] -mt-1" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-secondary-container text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<div class="w-16 h-16 rounded-full bg-tertiary-container text-on-tertiary flex items-center justify-center font-display-hero-mobile text-headline-md shadow-[0_6px_0_#00471e] cursor-pointer hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[32px]">check</span>
+</div>
+<span class="font-label-badge text-caption text-on-surface mt-2">गाव ओळख</span>
+<span class="font-caption text-[11px] text-tertiary-container font-bold">पूर्ण झाले (Lvl 1)</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[28px] hidden md:block">east</span>
+<!-- Node 2: Completed Forest Green with 2 Stars -->
+<div class="flex flex-col items-center">
+<div class="flex items-center gap-0.5 mb-1.5">
+<span class="material-symbols-outlined text-secondary-container text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-secondary-container text-[20px] -mt-1" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-outline-variant text-[18px]">star</span>
+</div>
+<div class="w-16 h-16 rounded-full bg-tertiary-container text-on-tertiary flex items-center justify-center font-display-hero-mobile text-headline-md shadow-[0_6px_0_#00471e] cursor-pointer hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[32px]">check</span>
+</div>
+<span class="font-label-badge text-caption text-on-surface mt-2">पाळीव प्राणी</span>
+<span class="font-caption text-[11px] text-tertiary-container font-bold">पूर्ण झाले (Lvl 2)</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[28px] hidden md:block">east</span>
+<!-- Node 3: Active Hero Glowing Golden Candy Node (With Chintu Avatar & Speech Bubble) -->
+<div class="flex flex-col items-center relative">
+<!-- Speech Bubble on Top -->
+<div class="relative -top-1 bg-surface-container-lowest px-3 py-1 rounded-full shadow-[0_2px_8px_rgba(0,0,0,0.12)] border-2 border-secondary-container flex items-center gap-1 animate-bounce">
+<span class="font-label-badge text-caption text-on-surface">येथे आहात! 👇</span>
+</div>
+<!-- Pulsing Hero Node -->
+<div class="relative">
+<div class="absolute -inset-2 rounded-full bg-secondary-container/40 animate-ping"></div>
+<div class="relative w-20 h-20 rounded-full bg-secondary-container text-on-secondary-container flex flex-col items-center justify-center shadow-[0_8px_0_#b38400,0_12px_20px_rgba(255,195,41,0.4)] cursor-pointer hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[36px]">play_arrow</span>
+<span class="font-label-chunky text-[12px] leading-none -mt-1 font-bold">३</span>
+</div>
+<!-- Chintu Mini Avatar Badge -->
+<div class="absolute -bottom-1 -right-1 w-8 h-8 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-md border-2 border-surface-container-lowest">
+<span class="material-symbols-outlined text-[18px]">face</span>
+</div>
+</div>
+<span class="font-label-chunky text-body-md text-on-surface mt-3">नदीची होडी</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-badge text-[11px] mt-0.5">चालू खेळ (Lvl 3)</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[28px] hidden md:block">east</span>
+<!-- Node 4: Locked Pastel Purple Node -->
+<div class="flex flex-col items-center opacity-65">
+<div class="h-6"></div>
+<div class="w-16 h-16 rounded-full bg-surface-variant text-on-surface-variant flex items-center justify-center shadow-[0_6px_0_#c9beff]">
+<span class="material-symbols-outlined text-[28px]">lock</span>
+</div>
+<span class="font-label-badge text-caption text-on-surface mt-2">आठवडी बाजार</span>
+<span class="font-caption text-[11px] text-outline">कुलूपबंद (Lvl 4)</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: Game Cards, Feedback Modals & Tasks -->
+<section class="w-full mb-space-xl" id="game-cards">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-6 bg-primary rounded-full"></span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">4. Story Cards, Questions &amp; Feedback Modals</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Speech bubbles, audio-prompt cards, and celebratory success banners.</p>
+</div>
+<span class="px-space-sm py-1 rounded-full bg-tertiary-container text-on-tertiary font-label-badge text-caption">Interactive Samples</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Card 1: Question Audio Task Card with NOVA Tail -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-badge text-caption">Task Card</span>
+<button class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shadow-[0_3px_0_#b38400] active:translate-y-[3px] active:shadow-none" title="आवाज ऐका">
+<span class="material-symbols-outlined text-[20px]">volume_up</span>
+</button>
+</div>
+<!-- Speech Bubble Container with Visual Tail -->
+<div class="bg-surface-container-low p-space-md rounded-lg relative mb-4">
+<h4 class="font-headline-md text-headline-md text-on-surface mb-1">
+              "लाकडी नाव कुठे आहे? ⛵"
+            </h4>
+<p class="font-caption text-caption text-on-surface-variant">
+              (Where is the wooden boat in the river?)
+            </p>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center text-on-primary shadow-sm font-label-badge text-caption">
+              🤖
+            </div>
+<span class="font-caption text-caption text-on-surface-variant">
+              NOVA speaks question via Marathi TTS audio cue.
+            </span>
+</div>
+</div>
+<div class="pt-space-md">
+<div class="w-full bg-surface-container-high rounded-full h-2">
+<div class="bg-tertiary-container h-2 rounded-full w-3/4"></div>
+</div>
+<div class="flex justify-between font-caption text-caption text-on-surface-variant mt-1">
+<span>प्रगती (Progress)</span>
+<span>३/४ प्रश्न</span>
+</div>
+</div>
+</div>
+<!-- Card 2: Interactive Choice Option Card (Playful Tap Tile) -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-badge text-caption">Multi-Choice Tile</span>
+<span class="font-caption text-caption text-on-surface-variant">56px Hit Zone</span>
+</div>
+<div class="space-y-space-sm">
+<!-- Selected Correct Tile -->
+<div class="p-space-sm rounded-lg bg-surface-container border-2 border-primary-container flex items-center justify-between shadow-sm cursor-pointer hover:bg-surface-container-high transition-all">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-label-chunky text-label-badge">
+                  अ
+                </div>
+<div>
+<div class="font-label-chunky text-body-md text-on-surface">बैलगाडी (Bullock Cart)</div>
+<div class="font-caption text-caption text-on-surface-variant">लाकडी चाके व बैलजोडी</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary text-[24px]">check_circle</span>
+</div>
+<!-- Alternative Tile -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between shadow-sm cursor-pointer hover:bg-surface-container transition-all">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center font-label-chunky text-label-badge">
+                  ब
+                </div>
+<div>
+<div class="font-label-chunky text-body-md text-on-surface">ट्रॅक्टर (Tractor)</div>
+<div class="font-caption text-caption text-on-surface-variant">शेतातील मोठे लाल इंजिन</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[24px]">radio_button_unchecked</span>
+</div>
+</div>
+</div>
+<p class="font-caption text-caption text-on-surface-variant mt-space-sm">
+          Tapping tile plays wooden toy click sound with haptic pulse.
+        </p>
+</div>
+<!-- Card 3: Success Feedback Modal Banner -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-badge text-caption">Celebration Modal</span>
+<span class="text-tertiary-container font-label-badge text-caption">XP + 50</span>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shadow-lg mb-2">
+<span class="material-symbols-outlined text-[36px]" style="font-variation-settings: 'FILL' 1;">emoji_events</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-tertiary-container mb-1">
+              छान! बरोबर ओळखले! 🌟
+            </h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-sm">
+              Well done! You found the boat on the river!
+            </p>
+<div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-badge text-caption">
+              + १५ सोन्याची नाणी (Coins)
+            </div>
+</div>
+</div>
+<button class="w-full mt-space-sm py-3 rounded-full bg-tertiary-container text-on-tertiary font-label-chunky text-label-badge shadow-[0_4px_0_#00471e] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center gap-1">
+<span>पुढे चला! (CONTINUE)</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- SECTION 5: Brand Color Tokens & Swatches -->
+<section class="w-full mb-space-xl" id="color-tokens">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-6 bg-secondary-container rounded-full"></span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">5. Design Tokens &amp; Color Swatches</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Strict design tokens mapped to tactile village gamification themes.</p>
+</div>
+<span class="px-space-sm py-1 rounded-full bg-surface-container-highest text-on-surface-variant font-label-badge text-caption">Tailwind Token Map</span>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-space-sm">
+<!-- Swatch 1: Emerald Green Primary CTA -->
+<div class="bg-surface-container-lowest rounded-lg p-space-sm shadow-sm flex flex-col justify-between">
+<div class="w-full h-20 rounded-md bg-tertiary-container mb-2 flex items-center justify-center text-on-tertiary font-label-badge text-caption">
+          Primary CTA
+        </div>
+<div>
+<div class="font-label-badge text-label-badge text-on-surface">Forest Green</div>
+<div class="font-caption text-caption text-on-surface-variant font-mono text-[12px]">tertiary-container</div>
+<div class="font-caption text-caption text-tertiary font-bold mt-1">#007d35</div>
+</div>
+</div>
+<!-- Swatch 2: Golden Amber Node -->
+<div class="bg-surface-container-lowest rounded-lg p-space-sm shadow-sm flex flex-col justify-between">
+<div class="w-full h-20 rounded-md bg-secondary-container mb-2 flex items-center justify-center text-on-secondary-container font-label-badge text-caption">
+          Hero Node
+        </div>
+<div>
+<div class="font-label-badge text-label-badge text-on-surface">Golden Amber</div>
+<div class="font-caption text-caption text-on-surface-variant font-mono text-[12px]">secondary-container</div>
+<div class="font-caption text-caption text-secondary font-bold mt-1">#ffc329</div>
+</div>
+</div>
+<!-- Swatch 3: Electric Purple / NOVA Accent -->
+<div class="bg-surface-container-lowest rounded-lg p-space-sm shadow-sm flex flex-col justify-between">
+<div class="w-full h-20 rounded-md bg-primary-container mb-2 flex items-center justify-center text-on-primary-container font-label-badge text-caption">
+          NOVA Blue-Violet
+        </div>
+<div>
+<div class="font-label-badge text-label-badge text-on-surface">Electric Purple</div>
+<div class="font-caption text-caption text-on-surface-variant font-mono text-[12px]">primary-container</div>
+<div class="font-caption text-caption text-primary font-bold mt-1">#6c47ff</div>
+</div>
+</div>
+<!-- Swatch 4: Deep Bevel Shade -->
+<div class="bg-surface-container-lowest rounded-lg p-space-sm shadow-sm flex flex-col justify-between">
+<div class="w-full h-20 rounded-md bg-on-tertiary-fixed-variant mb-2 flex items-center justify-center text-on-tertiary font-label-badge text-caption">
+          3D Bevel Lip
+        </div>
+<div>
+<div class="font-label-badge text-label-badge text-on-surface">Deep Under-Lip</div>
+<div class="font-caption text-caption text-on-surface-variant font-mono text-[12px]">on-tertiary-fixed-var</div>
+<div class="font-caption text-caption text-on-surface-variant font-bold mt-1">#005320</div>
+</div>
+</div>
+<!-- Swatch 5: Warm Village Surface -->
+<div class="bg-surface-container-lowest rounded-lg p-space-sm shadow-sm flex flex-col justify-between">
+<div class="w-full h-20 rounded-md bg-surface-container-low mb-2 flex items-center justify-center text-on-surface font-label-badge text-caption">
+          Warm Surface
+        </div>
+<div>
+<div class="font-label-badge text-label-badge text-on-surface">Cream Lavender</div>
+<div class="font-caption text-caption text-on-surface-variant font-mono text-[12px]">surface-container-low</div>
+<div class="font-caption text-caption text-on-surface font-bold mt-1">#f8f1ff</div>
+</div>
+</div>
+<!-- Swatch 6: Night / Cinema Indigo -->
+<div class="bg-surface-container-lowest rounded-lg p-space-sm shadow-sm flex flex-col justify-between">
+<div class="w-full h-20 rounded-md bg-inverse-surface mb-2 flex items-center justify-center text-inverse-on-surface font-label-badge text-caption">
+          Cinema Indigo
+        </div>
+<div>
+<div class="font-label-badge text-label-badge text-on-surface">Night Cinema</div>
+<div class="font-caption text-caption text-on-surface-variant font-mono text-[12px]">inverse-surface</div>
+<div class="font-caption text-caption text-primary font-bold mt-1">#352a52</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 6: Bilingual Marathi & English Copy Bank -->
+<section class="w-full" id="vernacular-bank">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-6 bg-tertiary-container rounded-full"></span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">6. Vernacular Copy Bank (मराठी + English)</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Validated strings for pre-readers, TTS voiceover scripts, and encouragement loops.</p>
+</div>
+<button class="px-space-sm py-1.5 rounded-full bg-surface-container-lowest text-primary-container hover:bg-primary-container hover:text-on-primary-container transition-all font-label-badge text-caption flex items-center gap-1 shadow-sm" onclick="navigator.clipboard.writeText('माझे गाव (Majhe Gaon) Strings Exported'); alert('Full Copy Bank Copied to Clipboard!');">
+<span class="material-symbols-outlined text-[16px]">download</span> Export All Strings
+      </button>
+</div>
+<div class="bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm">
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-surface-container-high text-on-surface font-label-badge text-caption uppercase tracking-wider">
+<th class="py-3 px-4">Context / Element</th>
+<th class="py-3 px-4">मराठी (Devanagari)</th>
+<th class="py-3 px-4">English Equivalent</th>
+<th class="py-3 px-4">Audio Prompt (TTS / Voice)</th>
+<th class="py-3 px-4 text-right">Quick Action</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container font-body-md text-body-md">
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3 px-4 font-label-badge text-caption text-primary">Main Game CTA</td>
+<td class="py-3 px-4 font-bold text-on-surface">खेळा! ➔</td>
+<td class="py-3 px-4 text-on-surface-variant">Play! ➔</td>
+<td class="py-3 px-4 font-caption text-caption text-on-surface-variant">"खेळायला सुरुवात करूया!"</td>
+<td class="py-3 px-4 text-right">
+<button class="px-2.5 py-1 rounded-md bg-surface-container hover:bg-primary hover:text-on-primary font-caption text-caption" onclick="navigator.clipboard.writeText('खेळा!'); alert('Copied: खेळा!');">Copy</button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3 px-4 font-label-badge text-caption text-primary">Success Banner</td>
+<td class="py-3 px-4 font-bold text-tertiary-container">छान! बरोबर ओळखले! 🌟</td>
+<td class="py-3 px-4 text-on-surface-variant">Great! You found it!</td>
+<td class="py-3 px-4 font-caption text-caption text-on-surface-variant">"शाब्बास! तुझे उत्तर अगदी बरोबर आहे!"</td>
+<td class="py-3 px-4 text-right">
+<button class="px-2.5 py-1 rounded-md bg-surface-container hover:bg-primary hover:text-on-primary font-caption text-caption" onclick="navigator.clipboard.writeText('छान! बरोबर ओळखले!'); alert('Copied: छान! बरोबर ओळखले!');">Copy</button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3 px-4 font-label-badge text-caption text-primary">Try Again Prompt</td>
+<td class="py-3 px-4 font-bold text-secondary">पुन्हा प्रयत्न करा! 🔄</td>
+<td class="py-3 px-4 text-on-surface-variant">Try once more!</td>
+<td class="py-3 px-4 font-caption text-caption text-on-surface-variant">"काही हरकत नाही, पुन्हा एकदा पाहा!"</td>
+<td class="py-3 px-4 text-right">
+<button class="px-2.5 py-1 rounded-md bg-surface-container hover:bg-primary hover:text-on-primary font-caption text-caption" onclick="navigator.clipboard.writeText('पुन्हा प्रयत्न करा!'); alert('Copied: पुन्हा प्रयत्न करा!');">Copy</button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3 px-4 font-label-badge text-caption text-primary">Orientation Alert</td>
+<td class="py-3 px-4 font-bold text-on-surface">फोन आडवा करा 🔄</td>
+<td class="py-3 px-4 text-on-surface-variant">Rotate phone horizontal</td>
+<td class="py-3 px-4 font-caption text-caption text-on-surface-variant">"मोठा पडदा पाहण्यासाठी फोन आडवा करा!"</td>
+<td class="py-3 px-4 text-right">
+<button class="px-2.5 py-1 rounded-md bg-surface-container hover:bg-primary hover:text-on-primary font-caption text-caption" onclick="navigator.clipboard.writeText('फोन आडवा करा'); alert('Copied: फोन आडवा करा');">Copy</button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3 px-4 font-label-badge text-caption text-primary">Map Node Callout</td>
+<td class="py-3 px-4 font-bold text-on-surface">येथे आहात! 👇</td>
+<td class="py-3 px-4 text-on-surface-variant">You are here!</td>
+<td class="py-3 px-4 font-caption text-caption text-on-surface-variant">"चिंटू आणि नोव्हा वाट पाहत आहेत!"</td>
+<td class="py-3 px-4 text-right">
+<button class="px-2.5 py-1 rounded-md bg-surface-container hover:bg-primary hover:text-on-primary font-caption text-caption" onclick="navigator.clipboard.writeText('येथे आहात!'); alert('Copied: येथे आहात!');">Copy</button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3 px-4 font-label-badge text-caption text-primary">Level Complete</td>
+<td class="py-3 px-4 font-bold text-tertiary">अभिनंदन! टप्पा पूर्ण! 🏆</td>
+<td class="py-3 px-4 text-on-surface-variant">Congrats! Level complete!</td>
+<td class="py-3 px-4 font-caption text-caption text-on-surface-variant">"व्वा! तू संपूर्ण गाव शोधून काढलेस!"</td>
+<td class="py-3 px-4 text-right">
+<button class="px-2.5 py-1 rounded-md bg-surface-container hover:bg-primary hover:text-on-primary font-caption text-caption" onclick="navigator.clipboard.writeText('अभिनंदन! टप्पा पूर्ण!'); alert('Copied: अभिनंदन! टप्पा पूर्ण!');">Copy</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="p-space-sm bg-surface-container-high flex flex-wrap items-center justify-between gap-2">
+<span class="font-caption text-caption text-on-surface-variant">
+          Tip: Pair all Marathi display text with integrated audio trigger buttons (🔊) to assist 5-year-old pre-readers.
+        </span>
+<span class="font-label-badge text-caption text-primary-container">
+          Verified for Unicode / Devanagari UTF-8
+        </span>
+</div>
+</div>
+</section>
+</div></main></div></body></html>

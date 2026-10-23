@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;700&amp;family=Rubik:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"secondary-container":"#ffc329","surface-container-highest":"#e9ddff","on-secondary":"#ffffff","secondary-fixed-dim":"#f9bd22","primary-container":"#6c47ff","on-tertiary-fixed-variant":"#005320","background":"#fdf7ff","inverse-primary":"#c9beff","error":"#ba1a1a","inverse-on-surface":"#f6eeff","on-tertiary":"#ffffff","surface-container-low":"#f8f1ff","surface-tint":"#5e35f1","on-error":"#ffffff","surface-bright":"#fdf7ff","on-primary":"#ffffff","surface-dim":"#e1d3ff","on-primary-fixed":"#1b0063","on-surface":"#1f143c","surface-variant":"#e9ddff","surface-container":"#f3eaff","outline-variant":"#c9c3d9","on-secondary-fixed-variant":"#5c4300","on-error-container":"#93000a","on-secondary-container":"#6f5100","tertiary":"#006128","primary-fixed":"#e6deff","inverse-surface":"#352a52","tertiary-container":"#007d35","primary-fixed-dim":"#c9beff","on-tertiary-container":"#b9ffbe","on-surface-variant":"#484556","secondary-fixed":"#ffdf9f","outline":"#797588","on-tertiary-fixed":"#002109","on-secondary-fixed":"#261a00","surface-container-high":"#eee4ff","on-primary-container":"#f1ebff","primary":"#5323e6","surface-container-lowest":"#ffffff","on-background":"#1f143c","secondary":"#795900","tertiary-fixed-dim":"#62df7d","error-container":"#ffdad6","on-primary-fixed-variant":"#4500d8","surface":"#fdf7ff","tertiary-fixed":"#7ffc97"},borderRadius:{DEFAULT:"1rem",lg:"2rem",xl:"3rem",full:"9999px"},spacing:{"margin":"1rem","margin-tablet":"2rem","gutter-tablet":"1.5rem","space-lg":"1.75rem","gutter":"1rem","space-xl":"2.5rem","space-xs":"0.375rem","space-sm":"0.75rem","space-md":"1.25rem"},fontFamily:{"caption":["Nunito Sans"],"label-chunky":["Rubik"],"headline-md":["Rubik"],"display-hero-mobile":["Rubik"],"display-hero":["Rubik"],"body-md":["Nunito Sans"],"body-lg":["Nunito Sans"],"headline-lg":["Rubik"],"label-badge":["Rubik"]},fontSize:{"caption":["13px",{lineHeight:"18px",fontWeight:"700"}],"label-chunky":["18px",{lineHeight:"22px",fontWeight:"800"}],"headline-md":["22px",{lineHeight:"30px",fontWeight:"700"}],"display-hero-mobile":["32px",{lineHeight:"40px",fontWeight:"800"}],"display-hero":["40px",{lineHeight:"48px",fontWeight:"800"}],"body-md":["16px",{lineHeight:"24px",fontWeight:"600"}],"body-lg":["18px",{lineHeight:"26px",fontWeight:"700"}],"headline-lg":["28px",{lineHeight:"36px",fontWeight:"700"}],"label-badge":["14px",{lineHeight:"18px",fontWeight:"700"}]}}}}</script></head><body class="bg-background font-body-md text-body-md text-on-surface"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-gutter md:px-gutter-tablet flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm shrink-0"><div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container shadow-[0_3px_0_#d49700]"><span class="material-symbols-outlined text-[24px]">token</span></div><div class="flex flex-col"><span class="font-headline-md text-headline-md text-primary leading-tight tracking-tight">Majhe Gaon</span><span class="font-caption text-caption text-on-surface-variant hidden sm:inline">माझे गाव अ‍ॅसेट लायब्ररी</span></div></div><div class="flex-1 max-w-md hidden lg:flex items-center relative"><div class="w-full flex items-center bg-surface-container-low rounded-full px-space-md py-space-xs"><span class="material-symbols-outlined text-outline mr-space-xs">search</span><input class="w-full bg-transparent border-0 outline-none font-body-md text-body-md text-on-surface placeholder:text-outline" placeholder="Search 3D assets, components, tokens..." type="text"/></div></div><nav class="hidden xl:flex items-center gap-space-xs bg-surface-container-low p-space-xs rounded-full" data-active-classes="bg-primary-container text-on-primary-container font-label-badge text-label-badge rounded-full"><a aria-current="page" class="px-space-md py-space-xs transition-all bg-primary-container text-on-primary-container font-label-badge text-label-badge rounded-full" data-path="all-assets" href="#">All Assets</a><a class="px-space-md py-space-xs text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-label-badge text-label-badge rounded-full transition-all" data-path="3d-characters-and-mascots" href="#">3D Characters &amp; Mascots</a><a class="px-space-md py-space-xs text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-label-badge text-label-badge rounded-full transition-all" data-path="branding-and-logos" href="#">Branding &amp; Logos</a><a class="px-space-md py-space-xs text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-label-badge text-label-badge rounded-full transition-all" data-path="tactile-ui-containers" href="#">Tactile UI Containers</a><a class="px-space-md py-space-xs text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-label-badge text-label-badge rounded-full transition-all" data-path="candy-game-controls" href="#">Candy Game Controls</a><a class="px-space-md py-space-xs text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-label-badge text-label-badge rounded-full transition-all" data-path="code-and-css-tokens" href="#">Code &amp; CSS Tokens</a></nav><div class="flex items-center gap-space-sm shrink-0"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<!-- Subtle ambient decorative glow -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-32 -left-20 w-96 h-96 rounded-full bg-primary/10 blur-3xl pointer-events-none"></div>
+<div class="absolute top-48 -right-24 w-96 h-96 rounded-full bg-secondary-container/20 blur-3xl pointer-events-none"></div>
+<div class="w-full px-gutter md:px-gutter-tablet py-space-xl max-w-7xl mx-auto flex flex-col gap-space-xl">
+<!-- HERO HEADER -->
+<section class="flex flex-col gap-space-md">
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center gap-1.5 px-space-md py-1 bg-surface-container-high text-primary font-label-badge text-label-badge rounded-full shadow-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-primary animate-ping inline-block"></span>
+              Version 2.0 • Production Ready
+            </span>
+<span class="inline-flex items-center gap-1 px-space-sm py-1 bg-tertiary-fixed text-on-tertiary-fixed font-label-badge text-label-badge rounded-full">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+              Design System Validated
+            </span>
+</div>
+<!-- Quick Actions -->
+<div class="flex items-center gap-space-sm">
+<button class="group relative px-space-md py-2.5 bg-primary text-on-primary font-label-badge text-label-badge rounded-full shadow-[0_4px_0_#3915a8] hover:translate-y-0.5 hover:shadow-[0_2px_0_#3915a8] active:translate-y-1 active:shadow-none transition-all flex items-center gap-2" onclick="downloadAllAssets()">
+<span class="material-symbols-outlined text-[18px]">cloud_download</span>
+              Export Asset Bundle (.ZIP)
+            </button>
+<button class="px-space-md py-2.5 bg-surface-container-high text-on-surface font-label-badge text-label-badge rounded-full hover:bg-surface-variant transition-all flex items-center gap-2" onclick="copyTokensSnippet()">
+<span class="material-symbols-outlined text-[18px]">integration_instructions</span>
+              Quick Tokens
+            </button>
+</div>
+</div>
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md">
+<div class="max-w-3xl flex flex-col gap-space-xs">
+<h1 class="font-display-hero text-display-hero text-on-surface tracking-tight leading-tight">
+              Majhe Gaon — Master Asset Library &amp; Production UI Kit
+            </h1>
+<p class="font-headline-md text-headline-md text-primary">
+              माझे गाव अ‍ॅसेट लायब्ररी • Playful Tactile Toybox Engine
+            </p>
+<p class="font-body-lg text-body-lg text-on-surface-variant pt-space-xs">
+              The unified design asset system for developers and designers building Majhe Gaon game screens. Click any asset card to preview, inspect dimensions, download transparent PNGs/SVGs, or copy responsive CSS/HTML snippets.
+            </p>
+</div>
+<!-- Quick Stats Pills -->
+<div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 gap-space-xs shrink-0">
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-center gap-3 shadow-sm">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">category</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-chunky text-label-chunky text-on-surface">12</span>
+<span class="font-caption text-caption text-on-surface-variant">Production Assets</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-center gap-3 shadow-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">smart_toy</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-chunky text-label-chunky text-on-surface">2</span>
+<span class="font-caption text-caption text-on-surface-variant">3D Mascots</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-center gap-3 shadow-sm">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[20px]">layers</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-chunky text-label-chunky text-on-surface">3</span>
+<span class="font-caption text-caption text-on-surface-variant">UI Containers</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-center gap-3 shadow-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[20px]">code</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-chunky text-label-chunky text-on-surface">100%</span>
+<span class="font-caption text-caption text-on-surface-variant">Pure Tailwind</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Filter Pill Navigation -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-2 pt-space-xs text-nowrap">
+<button class="px-space-md py-1.5 bg-primary-container text-on-primary-container font-label-badge text-label-badge rounded-full shadow-sm">All Library (12)</button>
+<a class="px-space-md py-1.5 bg-surface-container text-on-surface-variant hover:bg-surface-container-high font-label-badge text-label-badge rounded-full transition-all" href="#mascots">Characters &amp; Guides</a>
+<a class="px-space-md py-1.5 bg-surface-container text-on-surface-variant hover:bg-surface-container-high font-label-badge text-label-badge rounded-full transition-all" href="#branding">Brand &amp; Logo</a>
+<a class="px-space-md py-1.5 bg-surface-container text-on-surface-variant hover:bg-surface-container-high font-label-badge text-label-badge rounded-full transition-all" href="#containers">Tactile Containers</a>
+<a class="px-space-md py-1.5 bg-surface-container text-on-surface-variant hover:bg-surface-container-high font-label-badge text-label-badge rounded-full transition-all" href="#controls">Candy Controls</a>
+<a class="px-space-md py-1.5 bg-surface-container text-on-surface-variant hover:bg-surface-container-high font-label-badge text-label-badge rounded-full transition-all" href="#toolkit">Code Toolkit</a>
+</div>
+</section>
+<!-- SECTION 1: 3D CHARACTERS & MASCOTS -->
+<section class="flex flex-col gap-space-md" id="mascots">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-secondary-container"></span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">1. 3D Characters &amp; Mascots</h2>
+</div>
+<p class="font-caption text-caption text-on-surface-variant">३D पात्र व मार्गदर्शक • High-fidelity Pixar-stylized hero personalities</p>
+</div>
+<span class="font-label-badge text-label-badge text-primary bg-primary-fixed px-3 py-1 rounded-full self-start sm:self-auto">2 Assets Available</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-lg">
+<!-- Card 1: Chintu -->
+<div class="bg-surface-container-lowest rounded-lg p-space-lg shadow-md flex flex-col gap-space-md relative overflow-hidden group">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-on-surface">Chintu (चिंटू)</span>
+<span class="font-caption text-caption text-secondary">Protagonist Village Explorer</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-caption text-caption">1024×1024</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-caption text-caption">Alpha PNG</span>
+</div>
+</div>
+<!-- Preview Box with Alpha Checkerboard -->
+<div class="relative w-full h-80 rounded-DEFAULT overflow-hidden flex items-center justify-center p-space-md bg-[radial-gradient(#e9ddff_1px,transparent_1px)] [background-size:16px_16px] bg-surface-container-low shadow-inner">
+<img class="max-h-full object-contain filter drop-shadow-[0_12px_24px_rgba(31,20,60,0.18)] group-hover:scale-105 transition-transform duration-300" data-alt="A full body 3D Pixar-style render of Chintu, a cheerful 7-year-old Indian boy wearing a sunny yellow kurta with colorful geometric borders, denim rolled-up shorts, and an orange-and-blue baseball cap. He is raising one fist high in a joyous victorious celebration pose, isolated on a pure clean transparent background with soft ambient bounce light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBb-GtMlE7hxfq0fYDFhO6flcNjbQV9kyp2uYeP_95rXU45uHLziYuOoLIlVjoT0DK4DSbdnIEzGYGurKBAGGa96lJCQI-Kcl7oSjl99oXxjOLQVR2VO1DiypvN-qq4UgCDtgyuCnLDivfAa4LHhwjDpM0TlbjNpZBzZPtiVW2ZE0b4eTrK_pO1xZ8d9msE9QpBx08ooQoOHqObw9DOjQ5Qr0VRchQ78PuStgRYkgMLpUTrMrkrhKBr"/>
+<div class="absolute bottom-3 left-3 bg-surface/90 backdrop-blur-md px-2.5 py-1 rounded-full text-caption font-caption text-on-surface flex items-center gap-1.5 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span> Idle / Victory State
+              </div>
+</div>
+<div class="flex flex-col gap-2">
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Chintu acts as the warm human peer guide. Used on success modals, quest introductions, and map checkpoints. Expresses encouragement and local Indian cultural identity.
+              </p>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2 py-0.5 bg-surface-container-high text-on-surface font-caption text-caption rounded-full">#KurtaYellow</span>
+<span class="px-2 py-0.5 bg-surface-container-high text-on-surface font-caption text-caption rounded-full">#CapAzure</span>
+<span class="px-2 py-0.5 bg-surface-container-high text-on-surface font-caption text-caption rounded-full">Celebration Pose</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm pt-2">
+<button class="flex-1 py-2.5 bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-badge text-label-badge rounded-full transition-all flex items-center justify-center gap-2" onclick="copySnippet('IMAGE_9')">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+                Copy Image Tag
+              </button>
+<button class="px-space-md py-2.5 bg-primary text-on-primary font-label-badge text-label-badge rounded-full shadow-[0_3px_0_#3915a8] hover:translate-y-0.5 active:translate-y-1 transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">download</span>
+                PNG
+              </button>
+</div>
+</div>
+<!-- Card 2: NOVA the Bot -->
+<div class="bg-surface-container-lowest rounded-lg p-space-lg shadow-md flex flex-col gap-space-md relative overflow-hidden group">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-on-surface">NOVA (नोव्हा बॉट)</span>
+<span class="font-caption text-caption text-primary">Companion AI Assistant &amp; Tutor</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-caption text-caption">1024×1024</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-caption text-caption">Alpha PNG</span>
+</div>
+</div>
+<!-- Preview Box with Alpha Checkerboard -->
+<div class="relative w-full h-80 rounded-DEFAULT overflow-hidden flex items-center justify-center p-space-md bg-[radial-gradient(#e9ddff_1px,transparent_1px)] [background-size:16px_16px] bg-surface-container-low shadow-inner">
+<img class="max-h-full object-contain filter drop-shadow-[0_12px_24px_rgba(83,35,230,0.22)] group-hover:scale-105 transition-transform duration-300" data-alt="A round, lovable, chubby 3D electric-blue metallic companion robot named NOVA with a glossy digital visor face smiling warmly with pixelated eyes, glowing golden antenna tip, pointing upward with one finger in a tutoring gesture, standing heroically with thick rounded legs on a pure clean transparent background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCN03dsw8Db1DnX_nc8aRPt2H5pmgqe7JlZyMNWbD0PDTcsfJXpf92dzpWHPY9ajjNqxZ4V6gvwDgvp3gPGK4n1nhhPm5hkPPByu3gCxn8Y9gBrA6WYCH0d2Xzrc0c80VqStSocR34gy2VdDKpNgdJrRPO9WmAu_Coek_BGxbEx9FlPhcZ-qj3ikAFMAg-nTRbUzzMkd6jXBvsRftfDFDF8rOMUtC7gNJxHT205pdEgXRKJ4Ce-UVD7"/>
+<div class="absolute bottom-3 left-3 bg-surface/90 backdrop-blur-md px-2.5 py-1 rounded-full text-caption font-caption text-on-surface flex items-center gap-1.5 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span> Helper / Pointing State
+              </div>
+</div>
+<div class="flex flex-col gap-2">
+<p class="font-body-md text-body-md text-on-surface-variant">
+                NOVA teaches science and vocabulary modules, guides pre-readers with audio speaker cues, and pops up next to interactive question slabs during quizzes.
+              </p>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2 py-0.5 bg-surface-container-high text-on-surface font-caption text-caption rounded-full">#ElectricCyan</span>
+<span class="px-2 py-0.5 bg-surface-container-high text-on-surface font-caption text-caption rounded-full">#GlowAmber</span>
+<span class="px-2 py-0.5 bg-surface-container-high text-on-surface font-caption text-caption rounded-full">Pointer Antenna</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm pt-2">
+<button class="flex-1 py-2.5 bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-badge text-label-badge rounded-full transition-all flex items-center justify-center gap-2" onclick="copySnippet('IMAGE_10')">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+                Copy Image Tag
+              </button>
+<button class="px-space-md py-2.5 bg-primary text-on-primary font-label-badge text-label-badge rounded-full shadow-[0_3px_0_#3915a8] hover:translate-y-0.5 active:translate-y-1 transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">download</span>
+                PNG
+              </button>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: BRAND IDENTITY & LOGOS -->
+<section class="flex flex-col gap-space-md" id="branding">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-primary-container"></span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">2. Branding &amp; Wordmarks</h2>
+</div>
+<p class="font-caption text-caption text-on-surface-variant">ब्रँडिंग व लोगो • Bilingual candy toy typography and visual marks</p>
+</div>
+<span class="font-label-badge text-label-badge text-tertiary bg-tertiary-fixed px-3 py-1 rounded-full self-start sm:self-auto">Vector &amp; 3D Render</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Card 3: 3D Candy Wordmark (Large 7-Col) -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-lg p-space-lg shadow-md flex flex-col gap-space-md group">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-on-surface">Majhe Gaon 3D Candy Wordmark (माझे गाव)</span>
+<span class="font-caption text-caption text-on-surface-variant">Primary Title Logo Asset • Devanagari &amp; English</span>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-caption text-caption">1024×1024 Master</span>
+</div>
+<!-- Preview Box -->
+<div class="relative w-full h-80 rounded-DEFAULT overflow-hidden flex items-center justify-center p-space-lg bg-surface-container-low shadow-inner">
+<img class="max-h-full object-contain filter drop-shadow-[0_16px_30px_rgba(31,20,60,0.14)] group-hover:scale-105 transition-transform duration-300" data-alt="The official 3D glossy toy logo of Majhe Gaon with bold sculpted Devanagari lettering at the top in warm honey-yellow, a smiling cartoon sun peeking from behind, green sprout accents, purple antenna balls, and chunky bubbly blue English text reading MAJHE GAON on a purple base slab with stars, isolated on clean transparent background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdHi_I4jHAKOgxRaPScOBddSMlcc-wh9Q1_JuRIJUqFsWN38y3XfaFkZ1sut1bUNKv0CNnN7H8hc6tQQA5WaCfehK3TdJpAoABHLJ2KTd9jU4X_ptOi4Vb1mq1rhaq9-qLuRXdEHDtpDH8sCBZgaBjTQwudtONVNzNik5-rbNHWOKwzCa_8xGR1OjIn4cc-pY0A1Tjh2wrGDEEjvS2NYtIQoTImLLS5K_fDisxHMANIJ6vnxrQXkY5"/>
+</div>
+<div class="grid grid-cols-3 gap-space-xs pt-1">
+<div class="p-2.5 bg-surface-container rounded-DEFAULT flex flex-col gap-1">
+<span class="font-caption text-caption text-on-surface-variant">Top Text</span>
+<div class="flex items-center gap-2">
+<span class="w-4 h-4 rounded-full bg-secondary-container"></span>
+<span class="font-label-badge text-label-badge text-on-surface">#ffc329</span>
+</div>
+</div>
+<div class="p-2.5 bg-surface-container rounded-DEFAULT flex flex-col gap-1">
+<span class="font-caption text-caption text-on-surface-variant">Bottom Slab</span>
+<div class="flex items-center gap-2">
+<span class="w-4 h-4 rounded-full bg-primary-container"></span>
+<span class="font-label-badge text-label-badge text-on-surface">#6c47ff</span>
+</div>
+</div>
+<div class="p-2.5 bg-surface-container rounded-DEFAULT flex flex-col gap-1">
+<span class="font-caption text-caption text-on-surface-variant">Font Style</span>
+<span class="font-label-badge text-label-badge text-on-surface truncate">Custom Toy 3D</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="flex-1 py-2.5 bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-badge text-label-badge rounded-full transition-all flex items-center justify-center gap-2" onclick="copySnippet('IMAGE_7')">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+                Copy Image Snippet
+              </button>
+<button class="px-space-md py-2.5 bg-secondary-container text-on-secondary-container font-label-badge text-label-badge rounded-full shadow-[0_3px_0_#d49700] hover:translate-y-0.5 active:translate-y-1 transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">file_download</span>
+                Full Res PNG
+              </button>
+</div>
+</div>
+<!-- Card 4: Vector App Frame & Token Container (5-Col) -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-lg p-space-lg shadow-md flex flex-col gap-space-md group">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-on-surface">3D Tactile Frame Tile</span>
+<span class="font-caption text-caption text-on-surface-variant">Squishy App Icon &amp; Tile Shell</span>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-caption text-caption">Vector Base</span>
+</div>
+<!-- Preview Box -->
+<div class="relative w-full h-80 rounded-DEFAULT overflow-hidden flex items-center justify-center p-space-lg bg-[radial-gradient(#e9ddff_1px,transparent_1px)] [background-size:16px_16px] bg-surface-container-low shadow-inner">
+<div class="w-48 h-48 relative flex items-center justify-center">
+<img class="w-full h-full object-contain filter drop-shadow-[0_10px_20px_rgba(83,35,230,0.15)] group-hover:scale-105 transition-transform duration-300" data-alt="Chunky super-rounded square app icon frame in royal purple and glossy yellow rim with a soft lilac stitched inner border on a clean background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZjkjo99PkLMP-WNS6bE6eTqz0346RTrfY7th4VC8d7fcwmPpVCW9t0jPev6ryBJArZIOQ6BgfZgGzUx-I9T1QyYTHtqI1wSKg1wvDWmxqRBC4gRlqIFwGvt_TmC01pOkN7fCnaTpLRCKd9VSziC9tBLK4c7i6OzfF-dbjrodGwoac5M5SdQZjpkJBCeGLqrz8hZ4kZL7LNOsaMUn1_7j_0EXrIxykFWd_PtqjB5syuUbdlRERkpy4"/>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Used as the standard bounding container for level select badges, mini-game app icons, and achievement medals. Features 32px pill radius and stitched inset.
+              </p>
+<div class="flex items-center justify-between p-2.5 bg-surface-container rounded-DEFAULT">
+<span class="font-caption text-caption text-on-surface-variant">Extrusion Depth:</span>
+<span class="font-label-badge text-label-badge text-primary">6px Solid Violet Lip</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm pt-1">
+<button class="w-full py-2.5 bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-badge text-label-badge rounded-full transition-all flex items-center justify-center gap-2" onclick="copySnippet('IMAGE_4')">
+<span class="material-symbols-outlined text-[18px]">code</span>
+                Copy Embed Frame
+              </button>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: TACTILE UI CONTAINERS & PLACEHOLDERS -->
+<section class="flex flex-col gap-space-md" id="containers">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-tertiary"></span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">3. Tactile UI Containers &amp; Question Slabs</h2>
+</div>
+<p class="font-caption text-caption text-on-surface-variant">कंटेनर्स व प्रश्न कार्डे • Responsive question cards, slots, and squishy media tiles</p>
+</div>
+<span class="font-label-badge text-label-badge text-primary bg-primary-fixed px-3 py-1 rounded-full self-start sm:self-auto">Modular Slots</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+<!-- Card 5: Empty Question Card Placeholder -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-md flex flex-col justify-between gap-space-md group">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-headline-md text-headline-md text-on-surface">Question Slab (Skeuo)</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-caption text-caption">1200×896</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant">Glossy enamel slab with bubbly 3D question mark and wireframe bars</p>
+<div class="relative w-full h-56 rounded-DEFAULT overflow-hidden flex items-center justify-center p-3 bg-surface-container-low shadow-inner mt-2">
+<img alt="Tactile Question Slab" class="max-h-full object-contain filter drop-shadow-[0_8px_16px_rgba(31,20,60,0.12)] group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida/AEtjO1VIxpk7jI7n_jyc-k4tn1ZkkOAG2KiAgF-s8FNcSRjUSzjL-ZmNWe0KNCZyaUDt5DPz8x0qu3_tbz0tKuJy81rBBhY2C7jLoJMVxh7m_rcRS0LiEmQQ12vW2SB9x2ewFRhwB6QiggHD7ZrFNnclwEUA3pwawJtXvSMTFT9cvPPCU2swvp9_gqqalcGAl77WKCX0VcZ0hY4_6PmxL4TA0SJPLLz4ZDbaJ3e3IuP3h6hAg-G5S6pkarE6wKg"/>
+</div>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between text-caption font-caption text-on-surface-variant">
+<span>Usage: Quiz Question Screen</span>
+<span class="text-tertiary font-bold">4px Lip Extrusion</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="flex-1 py-2 bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-badge text-label-badge rounded-full transition-all" onclick="copySnippet('IMAGE_6')">Copy Placeholder ID</button>
+<button class="p-2 bg-primary text-on-primary rounded-full shadow-[0_2px_0_#3915a8]"><span class="material-symbols-outlined text-[18px]">download</span></button>
+</div>
+</div>
+</div>
+<!-- Card 6: Empty Container Tile Placeholder -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-md flex flex-col justify-between gap-space-md group">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-headline-md text-headline-md text-on-surface">Squishy Media Slot</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-caption text-caption">1024×1024</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant">Rounded squishy 1:1 tile with stitch inlay for photos, animals &amp; tokens</p>
+<div class="relative w-full h-56 rounded-DEFAULT overflow-hidden flex items-center justify-center p-3 bg-surface-container-low shadow-inner mt-2">
+<img alt="Squishy Media Tile" class="max-h-full object-contain filter drop-shadow-[0_8px_16px_rgba(31,20,60,0.12)] group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida/AEtjO1Wz8EOMPpU-QOzyu8d9bOtIVwCAbBSEQBvXufI2G6gno3m6PTWC5luqXFvbmueNf7LDJbPQ0oH75mdRICF3Z8Zd_D6gCA2AJVB9TRncR_XcK1LzYXgB2z9tMoDWXS_6jOnjdtdSKrwGvKcs-K1KMmYAlOZcq_kfherzXXuweMqWAdMgJvXuQ4iaEQ6IuSZB8E7ss8uL3O1AGqOIdXtOPA1NXAghvs2zc-cCV3tBK-dugUQ6ah1W0ajg4g"/>
+</div>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between text-caption font-caption text-on-surface-variant">
+<span>Usage: Multi-Choice Picture Tile</span>
+<span class="text-secondary font-bold">1:1 Ratio</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="flex-1 py-2 bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-badge text-label-badge rounded-full transition-all" onclick="copySnippet('IMAGE_5')">Copy Placeholder ID</button>
+<button class="p-2 bg-primary text-on-primary rounded-full shadow-[0_2px_0_#3915a8]"><span class="material-symbols-outlined text-[18px]">download</span></button>
+</div>
+</div>
+</div>
+<!-- Card 7: Live Interactive Slot Container Component -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-md flex flex-col justify-between gap-space-md border-2 border-primary/20">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-headline-md text-headline-md text-primary">Live CSS Toy Container</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-caption text-caption">Pure Tailwind</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant">Interactive demo: switch contents dynamically to test responsive layout</p>
+<!-- Interactive Live Slot Preview -->
+<div class="relative w-full h-56 rounded-DEFAULT bg-surface-container-high p-4 flex flex-col items-center justify-center mt-2 shadow-inner">
+<!-- Chunky 3D Physical Card Demonstration -->
+<div class="w-full max-w-xs bg-surface-container-lowest rounded-lg p-space-md shadow-[0_8px_0_#c9beff,0_16px_20px_rgba(31,20,60,0.08)] transition-all duration-200 cursor-pointer select-none" id="liveSlotCard">
+<div class="flex items-center justify-between pb-2">
+<span class="font-label-badge text-label-badge text-primary" id="slotBadge">Quiz Level 03</span>
+<button class="w-7 h-7 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shadow-[0_2px_0_#b48100] active:translate-y-0.5 active:shadow-none">
+<span class="material-symbols-outlined text-[16px]">volume_up</span>
+</button>
+</div>
+<div class="bg-surface-container-low rounded-DEFAULT p-3 flex items-center gap-3">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-primary shrink-0" id="slotIconBox">
+<span class="material-symbols-outlined text-[24px]" id="slotIcon">cruelty_free</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-md text-headline-md text-on-surface truncate" id="slotTitle">गाय (Cow)</span>
+<span class="font-caption text-caption text-on-surface-variant" id="slotSubtitle">गावचे पाळीव प्राणी</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Demo Switcher Controls -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between gap-1">
+<button class="flex-1 py-1 text-caption font-caption bg-surface-container hover:bg-surface-variant text-on-surface rounded-full transition-all" onclick="setSlotDemo('animal')">Animal</button>
+<button class="flex-1 py-1 text-caption font-caption bg-surface-container hover:bg-surface-variant text-on-surface rounded-full transition-all" onclick="setSlotDemo('fruit')">Fruit</button>
+<button class="flex-1 py-1 text-caption font-caption bg-surface-container hover:bg-surface-variant text-on-surface rounded-full transition-all" onclick="setSlotDemo('math')">Math</button>
+</div>
+<button class="w-full py-2 bg-primary text-on-primary font-label-badge text-label-badge rounded-full shadow-[0_3px_0_#3915a8] hover:translate-y-0.5 active:translate-y-1 transition-all flex items-center justify-center gap-1.5" onclick="copySnippet('CSS_SLOT_CONTAINER')">
+<span class="material-symbols-outlined text-[16px]">terminal</span>
+                Copy Responsive Component
+              </button>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: CANDY GAME CONTROLS & HUD BADGES -->
+<section class="flex flex-col gap-space-md" id="controls">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-secondary-fixed-dim"></span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">4. Candy Game Controls &amp; Badges</h2>
+</div>
+<p class="font-caption text-caption text-on-surface-variant">गेम बटणे व बॅजेस • Tactile push buttons, streak fire, ice shields, and victory chest</p>
+</div>
+<span class="font-label-badge text-label-badge text-secondary bg-secondary-fixed px-3 py-1 rounded-full self-start sm:self-auto">5 Game Components</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-space-md">
+<!-- Card 8: Emerald Green Button -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-md flex flex-col justify-between gap-space-sm group text-center">
+<div class="flex flex-col items-center gap-2">
+<span class="font-headline-md text-headline-md text-on-surface">Confirm CTA</span>
+<span class="font-caption text-caption text-tertiary font-bold">बरोबर / पुढे जा</span>
+<div class="w-32 h-32 relative my-2 flex items-center justify-center bg-surface-container-low rounded-full shadow-inner">
+<img alt="Emerald Green Candy CTA" class="w-24 h-24 object-contain filter drop-shadow-[0_8px_14px_rgba(2,44,21,0.22)] group-hover:scale-110 active:scale-95 transition-all cursor-pointer" src="https://lh3.googleusercontent.com/aida/AEtjO1Ualz769CqiI-aNaMBKs30OC9JCT4lTdyOdvkrCgHMt_JAhewv9hjibNmAWfurS8yTXEB4YaelRhqlK4dZnTywKrs8eLuJRGnegvOboymGmFWOYrE9C93HLKd0uFc-MvrnBFnIiPQr7QFCiV8Bo_l2QixRDsoi2b3rXcYlrPDBaHzsfuc3CNv5O_en1Bj0roxr7iA-eW35yg5ocvmcBc_NGfPS4R60j4FHp-pbMDhAbH3YocUfk5lOVwJQ"/>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<span class="font-caption text-caption text-on-surface-variant">#10B981 Emerald 3D</span>
+<button class="w-full py-2 bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-badge text-label-badge rounded-full transition-all" onclick="copySnippet('IMAGE_21')">Copy Asset ID</button>
+</div>
+</div>
+<!-- Card 9: Coral Red Button -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-md flex flex-col justify-between gap-space-sm group text-center">
+<div class="flex flex-col items-center gap-2">
+<span class="font-headline-md text-headline-md text-on-surface">Retry CTA</span>
+<span class="font-caption text-caption text-error font-bold">पुन्हा प्रयत्न</span>
+<div class="w-32 h-32 relative my-2 flex items-center justify-center bg-surface-container-low rounded-full shadow-inner">
+<img alt="Coral Red Candy CTA" class="w-24 h-24 object-contain filter drop-shadow-[0_8px_14px_rgba(76,5,25,0.22)] group-hover:scale-110 active:scale-95 transition-all cursor-pointer" src="https://lh3.googleusercontent.com/aida/AEtjO1Wt51lBRgaHBBlkY0aAqGv6g5gwA5DtqDeTnfXxXIGuKQIT2898bbYaWuxIyTKX6aSKQdlhtxvpouFKkZ3bORQL400yPuTIv3KQ_wZ21Kf5HWzw9CA5PGT_jKWJEq4ZoO2NWLHK4j_bn1RViLtf112sr6nwbry6YLi9Ur2akXRPotymX2PdwmlhQVsQJD0BY0LPfJMfk8sDRYRO_m6UBcjOnPlx39HwNfLuen0xb-B9p4AkygbGZvhlX4c"/>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<span class="font-caption text-caption text-on-surface-variant">#F43F5E Coral 3D</span>
+<button class="w-full py-2 bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-badge text-label-badge rounded-full transition-all" onclick="copySnippet('IMAGE_22')">Copy Asset ID</button>
+</div>
+</div>
+<!-- Card 10: Hot Streak Flame -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-md flex flex-col justify-between gap-space-sm group text-center">
+<div class="flex flex-col items-center gap-2">
+<span class="font-headline-md text-headline-md text-on-surface">Fire Streak</span>
+<span class="font-caption text-caption text-secondary font-bold">सलग विजय!</span>
+<div class="w-32 h-32 relative my-2 flex items-center justify-center bg-surface-container-low rounded-full shadow-inner">
+<img alt="Hot Streak Flame" class="w-24 h-24 object-contain filter drop-shadow-[0_8px_14px_rgba(245,158,11,0.25)] group-hover:scale-110 transition-transform" src="https://lh3.googleusercontent.com/aida/AEtjO1Vk61JrrAm3ay3ssxYsy5SC3nFVeZu7CuC5ozmsSEBr5yiCkrnNViCMWDLkSI9Rr7F94Pu15_DK2vMwQUJ-otk3JuBph2RJnZjHA6CarFvXurqhqd4D-gTabN3kNwEbspN59gH2WXBHnnAEWDza3Z9cxunajV1L7sEQnycdjFEEjdBFeO0puqfcljKVI9k3h3KhBEtw8w47ESfCw7JOAG4Tp0gQc9NRNeW1a6PSrwQ2vqFT87nNkkBIk1c"/>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<span class="font-caption text-caption text-on-surface-variant">Pixar Candy Fire</span>
+<button class="w-full py-2 bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-badge text-label-badge rounded-full transition-all" onclick="copySnippet('IMAGE_25')">Copy Asset ID</button>
+</div>
+</div>
+<!-- Card 11: Frozen Ice Shield -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-md flex flex-col justify-between gap-space-sm group text-center">
+<div class="flex flex-col items-center gap-2">
+<span class="font-headline-md text-headline-md text-on-surface">Ice Shield</span>
+<span class="font-caption text-caption text-primary font-bold">सुरक्षित टप्पा!</span>
+<div class="w-32 h-32 relative my-2 flex items-center justify-center bg-surface-container-low rounded-full shadow-inner">
+<img alt="Ice Streak Shield" class="w-24 h-24 object-contain filter drop-shadow-[0_8px_14px_rgba(14,165,233,0.25)] group-hover:scale-110 transition-transform" src="https://lh3.googleusercontent.com/aida/AEtjO1Uj-cFPr282wgCZG4czrt8s-79E8n26oig-zFJqdsoO_RaZyggmV5mrMSOi7SEHyNfbuv8RseJd-iRX5rch40rJwYQf3J_xlylWmzw8JPgq6Zkb3a7SQlm4tChcrYXZTLjfr0_bdYMP7geUPTDhjo4tkGG9SofD_oU35lgbpKtU9q6KRsY4njcmilOGJLxBT_hwhbdKmRYfQD9yFuVofQuZxjq23itPwfsk3Vt1OczYricTbKjwgN7U-w"/>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<span class="font-caption text-caption text-on-surface-variant">Crystalline Ice HUD</span>
+<button class="w-full py-2 bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-badge text-label-badge rounded-full transition-all" onclick="copySnippet('IMAGE_26')">Copy Asset ID</button>
+</div>
+</div>
+<!-- Card 12: Treasure Chest Burst -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-md flex flex-col justify-between gap-space-sm group text-center">
+<div class="flex flex-col items-center gap-2">
+<span class="font-headline-md text-headline-md text-on-surface">Victory Chest</span>
+<span class="font-caption text-caption text-tertiary font-bold">शाब्बास! पारितोषिक</span>
+<div class="w-32 h-32 relative my-2 flex items-center justify-center bg-surface-container-low rounded-full shadow-inner">
+<img alt="3D Victory Treasure Chest" class="w-28 h-28 object-contain filter drop-shadow-[0_8px_16px_rgba(245,158,11,0.3)] group-hover:scale-110 transition-transform" src="https://lh3.googleusercontent.com/aida/AEtjO1W0xH083mz62rJIuhCFNS62_7JusnJjA1mK0h9WS7zkm-nGjjnvanIDgwbIac0JMrDnqx6P-v1_lX6uvklsA8Gpj-8HbAPtWsFsBMFGvWOxOzFKmErcJ3behR1dCVH44K-yFE_0sp_M8ZHxPwhwx7OgKQ1d_2ekm8qUKd8vGWYHNMOIlnh-4V4-odm95XVAwpuxYiqI2A8S4SVDFhRnoGe2q7Sao0TydrUdZKIcsWn2BXtLz-Rhwy-0DVA"/>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<span class="font-caption text-caption text-on-surface-variant">Confetti &amp; Gold Burst</span>
+<button class="w-full py-2 bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-badge text-label-badge rounded-full transition-all" onclick="copySnippet('IMAGE_18')">Copy Asset ID</button>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: DEVELOPER TOOLKIT & CODE SNIPPETS -->
+<section class="flex flex-col gap-space-md bg-surface-container-lowest rounded-xl p-space-lg shadow-lg" id="toolkit">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[24px]">terminal</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">5. Developer Toolkit &amp; Snippets</h2>
+</div>
+<p class="font-caption text-caption text-on-surface-variant">
+              कॉपी-पेस्ट स्निपेट्स • Ready-to-use HTML &amp; Tailwind code conforming strictly to Majhe Gaon tactile tokens
+            </p>
+</div>
+<!-- Snippet Tabs -->
+<div class="flex items-center gap-space-xs bg-surface-container-low p-1 rounded-full">
+<button class="px-space-md py-1.5 font-label-badge text-label-badge rounded-full bg-primary text-on-primary transition-all" id="btn-tab-button" onclick="switchTab('tab-button')">3D Button CSS</button>
+<button class="px-space-md py-1.5 font-label-badge text-label-badge rounded-full text-on-surface-variant hover:text-on-surface transition-all" id="btn-tab-card" onclick="switchTab('tab-card')">Tactile Card</button>
+<button class="px-space-md py-1.5 font-label-badge text-label-badge rounded-full text-on-surface-variant hover:text-on-surface transition-all" id="btn-tab-hud" onclick="switchTab('tab-hud')">HUD Streak Capsule</button>
+</div>
+</div>
+<!-- Code Block Panel -->
+<div class="relative bg-inverse-surface text-inverse-on-surface rounded-lg p-space-md font-mono text-sm overflow-x-auto shadow-inner">
+<button class="absolute top-3 right-3 px-space-sm py-1 bg-surface-container-highest/20 hover:bg-surface-container-highest/30 text-inverse-on-surface font-label-badge text-label-badge rounded-full transition-all flex items-center gap-1.5" onclick="copyCurrentCode()">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span id="copyCodeText">Copy Snippet</span>
+</button>
+<!-- Tab Content 1: Button -->
+<div class="block" id="content-tab-button">
+<pre class="text-caption font-mono leading-relaxed"><code class="text-secondary-fixed">&lt;!-- Majhe Gaon 3D Tactile Arcade Button Component --&gt;</code>
+&lt;button class="relative px-6 py-3.5 bg-primary-container text-on-primary-container 
+               font-label-chunky text-label-chunky rounded-full 
+               shadow-[0_4px_0_#5432de,0_8px_16px_rgba(39,28,68,0.15)] 
+               active:translate-y-1 active:shadow-none 
+               transition-all flex items-center justify-center gap-2"&gt;
+  &lt;span class="material-symbols-outlined text-[20px]"&gt;play_arrow&lt;/span&gt;
+  खेळ सुरू करा (START GAME)
+&lt;/button&gt;</pre>
+</div>
+<!-- Tab Content 2: Card -->
+<div class="hidden" id="content-tab-card">
+<pre class="text-caption font-mono leading-relaxed"><code class="text-secondary-fixed">&lt;!-- Super-Rounded 3D Question Card Container --&gt;</code>
+&lt;div class="w-full bg-surface-container-lowest rounded-lg p-6 
+            shadow-[0_8px_0_#c9beff,0_16px_24px_rgba(31,20,60,0.06)] 
+            flex flex-col gap-4"&gt;
+  &lt;div class="flex items-center justify-between"&gt;
+    &lt;span class="px-3 py-1 bg-surface-container-high text-primary font-label-badge rounded-full"&gt;
+      प्रश्न क्रमांक ०१
+    &lt;/span&gt;
+    &lt;button class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container 
+                   shadow-[0_3px_0_#d49700] active:translate-y-0.5 active:shadow-none"&gt;
+      &lt;span class="material-symbols-outlined text-[20px]"&gt;volume_up&lt;/span&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+  &lt;h3 class="font-headline-md text-on-surface"&gt;खालीलपैकी गावातील पाळीव प्राणी कोणता?&lt;/h3&gt;
+&lt;/div&gt;</pre>
+</div>
+<!-- Tab Content 3: HUD -->
+<div class="hidden" id="content-tab-hud">
+<pre class="text-caption font-mono leading-relaxed"><code class="text-secondary-fixed">&lt;!-- Gamified HUD Streak Capsule with Overlapping 3D Token --&gt;</code>
+&lt;div class="inline-flex items-center bg-surface-container-low pl-1 pr-4 py-1 
+            rounded-full shadow-sm gap-2"&gt;
+  &lt;img src="https://lh3.googleusercontent.com/aida/AEtjO1Vk61JrrAm3ay3ssxYsy5SC3nFVeZu7CuC5ozmsSEBr5yiCkrnNViCMWDLkSI9Rr7F94Pu15_DK2vMwQUJ-otk3JuBph2RJnZjHA6CarFvXurqhqd4D-gTabN3kNwEbspN59gH2WXBHnnAEWDza3Z9cxunajV1L7sEQnycdjFEEjdBFeO0puqfcljKVI9k3h3KhBEtw8w47ESfCw7JOAG4Tp0gQc9NRNeW1a6PSrwQ2vqFT87nNkkBIk1c" class="w-8 h-8 object-contain -ml-2 -my-1" alt="Streak" /&gt;
+  &lt;span class="font-label-chunky text-secondary"&gt;५ दिवस सलग!&lt;/span&gt;
+  &lt;span class="font-caption text-on-surface-variant"&gt;(STREAK)&lt;/span&gt;
+&lt;/div&gt;</pre>
+</div>
+</div>
+<!-- Token Quick Legend -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-sm pt-space-xs">
+<div class="p-3 rounded-DEFAULT bg-surface-container-low flex flex-col gap-1">
+<span class="font-caption text-caption text-on-surface-variant">Electric Purple (Primary)</span>
+<div class="flex items-center gap-2">
+<span class="w-4 h-4 rounded-full bg-primary"></span>
+<span class="font-mono text-caption text-on-surface">#5323e6</span>
+</div>
+</div>
+<div class="p-3 rounded-DEFAULT bg-surface-container-low flex flex-col gap-1">
+<span class="font-caption text-caption text-on-surface-variant">Sunshine Gold (Reward)</span>
+<div class="flex items-center gap-2">
+<span class="w-4 h-4 rounded-full bg-secondary-container"></span>
+<span class="font-mono text-caption text-on-surface">#ffc329</span>
+</div>
+</div>
+<div class="p-3 rounded-DEFAULT bg-surface-container-low flex flex-col gap-1">
+<span class="font-caption text-caption text-on-surface-variant">Grassland Green (Ter.)</span>
+<div class="flex items-center gap-2">
+<span class="w-4 h-4 rounded-full bg-tertiary"></span>
+<span class="font-mono text-caption text-on-surface">#006128</span>
+</div>
+</div>
+<div class="p-3 rounded-DEFAULT bg-surface-container-low flex flex-col gap-1">
+<span class="font-caption text-caption text-on-surface-variant">Deep Grape Base</span>
+<div class="flex items-center gap-2">
+<span class="w-4 h-4 rounded-full bg-on-surface"></span>
+<span class="font-mono text-caption text-on-surface">#1f143c</span>
+</div>
+</div>
+</div>
+</section>
+<!-- FEEDBACK TOAST / COPIED NOTIFICATION -->
+<div class="fixed bottom-6 right-6 bg-inverse-surface text-inverse-on-surface px-space-md py-space-sm rounded-full shadow-2xl flex items-center gap-2 translate-y-24 opacity-0 transition-all duration-300 z-50" id="toastNotification">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">check_circle</span>
+<span class="font-label-badge text-label-badge" id="toastMessage">Asset reference copied to clipboard!</span>
+</div>
+</div>
+</div>
+<script>
+    function showToast(message) {
+      const toast = document.getElementById('toastNotification');
+      const toastMsg = document.getElementById('toastMessage');
+      if (!toast || !toastMsg) return;
+      toastMsg.textContent = message;
+      toast.classList.remove('translate-y-24', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+      setTimeout(() => {
+        toast.classList.add('translate-y-24', 'opacity-0');
+        toast.classList.remove('translate-y-0', 'opacity-100');
+      }, 2500);
+    }
+
+    function copySnippet(assetId) {
+      const snippet = `{{DATA:IMAGE:${assetId}}}`;
+      navigator.clipboard.writeText(snippet).then(() => {
+        showToast(`Copied snippet: ${snippet}`);
+      }).catch(() => {
+        showToast(`Copied ${assetId}`);
+      });
+    }
+
+    function copyTokensSnippet() {
+      const tokens = `primary: #5323e6 | secondary: #ffc329 | tertiary: #006128 | surface: #fdf7ff`;
+      navigator.clipboard.writeText(tokens).then(() => {
+        showToast('Color tokens copied to clipboard!');
+      });
+    }
+
+    function downloadAllAssets() {
+      showToast('Initiating bundle download of 12 production assets...');
+    }
+
+    // Switch Developer Toolkit Tabs
+    let currentActiveTab = 'tab-button';
+    function switchTab(tabId) {
+      ['tab-button', 'tab-card', 'tab-hud'].forEach(id => {
+        const btn = document.getElementById('btn-' + id);
+        const content = document.getElementById('content-' + id);
+        if (id === tabId) {
+          btn.classList.add('bg-primary', 'text-on-primary');
+          btn.classList.remove('text-on-surface-variant');
+          content.classList.remove('hidden');
+          content.classList.add('block');
+        } else {
+          btn.classList.remove('bg-primary', 'text-on-primary');
+          btn.classList.add('text-on-surface-variant');
+          content.classList.remove('block');
+          content.classList.add('hidden');
+        }
+      });
+      currentActiveTab = tabId;
+    }
+
+    function copyCurrentCode() {
+      const content = document.getElementById('content-' + currentActiveTab);
+      if (content) {
+        const text = content.innerText;
+        navigator.clipboard.writeText(text).then(() => {
+          const btnText = document.getElementById('copyCodeText');
+          btnText.textContent = 'Copied!';
+          setTimeout(() => { btnText.textContent = 'Copy Snippet'; }, 2000);
+          showToast('Code snippet copied!');
+        });
+      }
+    }
+
+    // Demo Slot Container Switcher
+    function setSlotDemo(type) {
+      const card = document.getElementById('liveSlotCard');
+      const badge = document.getElementById('slotBadge');
+      const icon = document.getElementById('slotIcon');
+      const title = document.getElementById('slotTitle');
+      const sub = document.getElementById('slotSubtitle');
+
+      if (!card || !badge || !icon || !title || !sub) return;
+
+      if (type === 'animal') {
+        badge.textContent = 'Quiz Level 03';
+        icon.textContent = 'cruelty_free';
+        title.textContent = 'गाय (Cow)';
+        sub.textContent = 'गावचे पाळीव प्राणी';
+      } else if (type === 'fruit') {
+        badge.textContent = 'Vocab Level 01';
+        icon.textContent = 'nutrition';
+        title.textContent = 'आंबा (Mango)';
+        sub.textContent = 'गोड फळांची नावे';
+      } else if (type === 'math') {
+        badge.textContent = 'Math Quest 05';
+        icon.textContent = 'calculate';
+        title.textContent = '२ + ३ = ५';
+        sub.textContent = 'मजेदार बेरीज शिका';
+      }
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low py-space-xl mt-space-xl"><div class="w-full px-gutter md:px-gutter-tablet flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container"><span class="material-symbols-outlined text-[18px]">cottage</span></div><span class="font-headline-md text-headline-md text-on-surface">Majhe Gaon Design System</span></div><p class="font-caption text-caption text-on-surface-variant text-center md:text-left">© 2025 Majhe Gaon (माझे गाव). Gamified Children Education &amp; Digital Village Kit.</p><div class="flex items-center gap-space-md"><span class="font-caption text-caption text-tertiary flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>v2.4 Ready</span></div></div></footer></body></html>
